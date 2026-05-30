@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue — Fichiers Broderie Numérique | Motif 237</title>
+  <meta name="description" content="Catalogue complet de fichiers de broderie numérique. Formats DST, JEF, PES, DSB. Filtrez par catégorie, format ou machine. Motif 237 — Yaoundé, Cameroun.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪡</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #ffffff;
+      --bg2: #f8f8f6;
+      --bg3: #f0ede6;
+      --border: #e5e5e5;
+      --text: #1a1a1a;
+      --text2: #5a5a5a;
+      --text3: #9a9a9a;
+      --gold: #b8862e;
+      --gold-light: #d4a843;
+      --gold-bg: #fdf8f0;
+      --green: #25D366;
+      --green-dark: #1da851;
+      --red: #e74c3c;
+      --radius: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+      --shadow: 0 4px 16px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
+      --transition: all 0.22s ease;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg2); color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ══ PROMO BAR ══ */
+    .promo-bar {
+      background: var(--text); color: #fff;
+      text-align: center; padding: 9px 16px;
+      font-size: 12.5px; font-weight: 500; letter-spacing: 0.01em;
+    }
+    .promo-bar span { color: var(--gold-light); font-weight: 700; }
+    .promo-bar .sep { margin: 0 10px; opacity: 0.35; }
+
+    /* ══ NAV ══ */
+    nav {
+      position: sticky; top: 0; z-index: 200;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      display: flex; align-items: center;
+      padding: 0 20px; height: 60px; gap: 16px;
+    }
+    .nav-brand { font-weight: 900; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 9px; white-space: nowrap; flex-shrink: 0; }
+    .nav-brand-icon { width: 36px; height: 36px; background: var(--text); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+    .nav-brand-text { display: flex; flex-direction: column; line-height: 1; }
+    .nav-brand-name { font-size: 17px; font-weight: 900; letter-spacing: -0.5px; }
+    .nav-brand-name em { color: var(--gold); font-style: normal; }
+    .nav-brand-sub { font-family: 'JetBrains Mono', monospace; font-size: 8.5px; color: var(--text3); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 1px; }
+    .nav-links { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
+    .nav-link { padding: 6px 13px; border-radius: 7px; font-size: 13px; font-weight: 600; color: var(--text2); transition: var(--transition); }
+    .nav-link:hover { background: var(--bg2); color: var(--text); }
+    .nav-link.active { color: var(--gold); }
+    .nav-search { flex: 1; max-width: 380px; position: relative; }
+    .nav-search svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; color: var(--text3); pointer-events: none; }
+    .nav-search input { width: 100%; padding: 8px 12px 8px 34px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 13px; font-family: inherit; background: var(--bg2); color: var(--text); outline: none; transition: var(--transition); }
+    .nav-search input:focus { border-color: var(--gold); background: #fff; box-shadow: 0 0 0 3px rgba(184,134,46,0.1); }
+    .nav-search input::placeholder { color: var(--text3); }
+    .btn-wa-nav {
+      display: flex; align-items: center; gap: 7px; flex-shrink: 0;
+      background: var(--green); color: #fff; font-weight: 700; font-size: 13px;
+      padding: 9px 16px; border-radius: 9px; transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(37,211,102,0.25);
+    }
+    .btn-wa-nav:hover { background: var(--green-dark); transform: translateY(-1px); }
+    .btn-wa-nav svg { width: 16px; height: 16px; }
+
+    /* ══ PAGE HEADER ══ */
+    .page-header {
+      background: var(--bg); border-bottom: 1px solid var(--border);
+      padding: 20px 24px 16px;
+    }
+    .breadcrumb { font-size: 12px; color: var(--text3); margin-bottom: 6px; }
+    .breadcrumb a { color: var(--text3); transition: var(--transition); }
+    .breadcrumb a:hover { color: var(--text2); }
+    .breadcrumb .sep { margin: 0 6px; }
+    .page-header h1 { font-size: 22px; font-weight: 900; color: var(--text); }
+
+    /* ══ MAIN LAYOUT ══ */
+    .page-body {
+      max-width: 1400px; margin: 0 auto;
+      padding: 20px 20px 80px;
+      display: flex; gap: 20px; align-items: flex-start;
+    }
+
+    /* ══ SIDEBAR ══ */
+    .sidebar {
+      width: 220px; flex-shrink: 0;
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 16px;
+      position: sticky; top: 80px;
+    }
+    .sidebar-section { margin-bottom: 20px; }
+    .sidebar-section:last-child { margin-bottom: 0; }
+    .sidebar-label {
+      font-size: 10px; font-weight: 700; color: var(--text3);
+      text-transform: uppercase; letter-spacing: 0.1em;
+      margin-bottom: 8px; display: block;
+    }
+    /* Search in sidebar */
+    .sidebar-search { position: relative; }
+    .sidebar-search svg { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); width: 13px; height: 13px; color: var(--text3); pointer-events: none; }
+    .sidebar-search input {
+      width: 100%; padding: 7px 10px 7px 28px;
+      border: 1.5px solid var(--border); border-radius: 8px;
+      font-size: 12px; font-family: inherit;
+      background: var(--bg2); color: var(--text); outline: none;
+      transition: var(--transition);
+    }
+    .sidebar-search input:focus { border-color: var(--gold); background: #fff; box-shadow: 0 0 0 3px rgba(184,134,46,0.1); }
+    .sidebar-search input::placeholder { color: var(--text3); }
+    /* Filter buttons */
+    .filter-list { display: flex; flex-direction: column; gap: 2px; }
+    .filter-item {
+      width: 100%; text-align: left; padding: 7px 10px;
+      border-radius: 8px; border: none; background: transparent;
+      font-size: 13px; font-weight: 500; color: var(--text2);
+      cursor: pointer; transition: var(--transition); font-family: inherit;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .filter-item:hover { background: var(--bg2); color: var(--text); }
+    .filter-item.active { background: var(--text); color: #fff; font-weight: 700; }
+    .filter-item.active .filter-count { opacity: 0.6; }
+    .filter-count { font-size: 11px; opacity: 0.5; }
+    /* Fmt filter */
+    .fmt-item {
+      width: 100%; text-align: left; padding: 6px 10px;
+      border-radius: 7px; border: none; background: transparent;
+      font-size: 12px; font-weight: 600; color: var(--text2);
+      cursor: pointer; transition: var(--transition); font-family: 'JetBrains Mono', monospace;
+    }
+    .fmt-item:hover { background: var(--bg2); }
+    .fmt-item.active { background: var(--text); color: #fff; }
+    /* Reset btn */
+    .reset-btn {
+      width: 100%; padding: 8px; border-radius: 8px;
+      border: 1.5px solid var(--border); background: transparent;
+      font-size: 12px; font-weight: 600; color: var(--text3);
+      cursor: pointer; transition: var(--transition); font-family: inherit;
+    }
+    .reset-btn:hover { border-color: var(--text); color: var(--text); background: var(--bg2); }
+
+    /* ══ MAIN CONTENT ══ */
+    .main-content { flex: 1; min-width: 0; }
+
+    /* Toolbar */
+    .toolbar {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 10px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .result-count { font-size: 13px; color: var(--text2); }
+    .result-count strong { color: var(--text); font-weight: 700; }
+    .sort-row { display: flex; gap: 5px; }
+    .sort-btn {
+      font-size: 12px; font-weight: 600; padding: 6px 12px;
+      border-radius: 7px; border: 1.5px solid var(--border);
+      background: #fff; color: var(--text2); cursor: pointer; transition: var(--transition);
+    }
+    .sort-btn.active { background: var(--text); color: #fff; border-color: var(--text); }
+    .sort-btn:hover:not(.active) { border-color: var(--gold); color: var(--gold); }
+
+    /* ══ PRODUCT GRID ══ */
+    .motif-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    @media (min-width: 560px)  { .motif-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 900px)  { .motif-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; } }
+    @media (min-width: 1100px) { .motif-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    /* ══ PRODUCT CARD ══ */
+    .product-card {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      cursor: pointer; transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+    .product-card:hover { border-color: #ccc; box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .card-img {
+      position: relative; aspect-ratio: 1;
+      overflow: hidden; background: var(--bg2);
+    }
+    .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.45s ease; display: block; }
+    .product-card:hover .card-img img { transform: scale(1.07); }
+    .badge-top { position: absolute; top: 8px; left: 8px; background: var(--text); color: var(--gold-light); font-size: 9px; font-weight: 800; padding: 3px 7px; border-radius: 4px; letter-spacing: 0.06em; }
+    .badge-niveau { position: absolute; top: 8px; right: 8px; font-size: 9px; font-weight: 700; padding: 3px 7px; border-radius: 4px; }
+    .badge-debutant { background: #dcfce7; color: #166534; }
+    .badge-standard { background: #dbeafe; color: #1e40af; }
+    .badge-avance   { background: #f3e8ff; color: #6b21a8; }
+    .card-body { padding: 11px 12px 13px; }
+    .card-cat { font-size: 10px; font-weight: 700; color: var(--text3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+    .card-name { font-size: 13px; font-weight: 700; color: var(--text); line-height: 1.35; margin-bottom: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .card-specs { display: flex; flex-wrap: wrap; gap: 4px; font-size: 10.5px; color: var(--text3); margin-bottom: 7px; }
+    .card-specs span + span::before { content: '·'; margin-right: 4px; color: var(--border); }
+    .card-fmts { display: flex; flex-wrap: wrap; gap: 3px; margin-bottom: 10px; }
+    .fmt { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; font-weight: 600; padding: 2px 7px; border-radius: 4px; }
+    .fmt-DST { background:#fef3c7; color:#92400e; }
+    .fmt-JEF { background:#dbeafe; color:#1e40af; }
+    .fmt-PES { background:#dcfce7; color:#166534; }
+    .fmt-DSB { background:#fee2e2; color:#991b1b; }
+    .fmt-EXP { background:#f3e8ff; color:#6b21a8; }
+    .fmt-HUS { background:#fce7f3; color:#9d174d; }
+    .card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+    .card-price { font-size: 15px; font-weight: 900; color: var(--gold); }
+    .card-price small { font-size: 10px; font-weight: 600; color: var(--text3); margin-left: 2px; }
+    .card-btns { display: flex; gap: 5px; }
+    /* Bouton Commander plus grand et plus visible */
+    .btn-wa-card {
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      background: var(--green); color: #fff;
+      font-weight: 800; font-size: 13px;
+      padding: 10px 14px; border-radius: 9px;
+      border: none; cursor: pointer; transition: var(--transition);
+      white-space: nowrap; font-family: inherit;
+      flex: 1; /* Prend toute la largeur disponible */
+      box-shadow: 0 2px 8px rgba(37,211,102,0.25);
+    }
+    .btn-wa-card:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(37,211,102,0.4); }
+    .btn-wa-card svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+    .btn-detail {
+      display: flex; align-items: center; justify-content: center;
+      border: 1.5px solid var(--border); color: var(--text3);
+      padding: 6px 9px; border-radius: 7px; transition: var(--transition);
+    }
+    .btn-detail:hover { border-color: var(--gold); color: var(--gold); }
+    .btn-detail svg { width: 13px; height: 13px; }
+
+    /* Card enter animation */
+    @keyframes cardEnter { from { opacity:0; transform:scale(0.97) translateY(8px); } to { opacity:1; transform:none; } }
+    .card-enter { animation: cardEnter 0.3s ease forwards; }
+
+    /* ══ EMPTY STATE ══ */
+    .empty-state { display: none; text-align: center; padding: 60px 20px; }
+    .empty-state .emoji { font-size: 48px; margin-bottom: 12px; }
+    .empty-state h3 { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+    .empty-state p { font-size: 13px; color: var(--text2); margin-bottom: 16px; }
+    .empty-state button { padding: 9px 22px; background: var(--text); color: #fff; border: none; border-radius: 9px; font-weight: 700; font-size: 13px; cursor: pointer; font-family: inherit; }
+
+    /* ══ FOOTER ══ */
+    footer { background: var(--text); color: #9a9a9a; padding: 40px 20px 28px; margin-top: 40px; }
+    .footer-grid {
+      max-width: 1000px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 32px; margin-bottom: 32px;
+    }
+    @media (max-width: 640px) { .footer-grid { grid-template-columns: 1fr; gap: 24px; } }
+    .footer-brand-name { font-size: 20px; font-weight: 900; color: #fff; margin-bottom: 6px; }
+    .footer-brand-name em { color: var(--gold-light); font-style: normal; }
+    .footer-brand-desc { font-size: 13px; line-height: 1.6; margin-bottom: 14px; }
+    .footer-fmts { display: flex; flex-wrap: wrap; gap: 5px; }
+    .footer-fmt { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 4px; background: rgba(255,255,255,0.08); color: #ccc; }
+    .footer-heading { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #5a5a5a; margin-bottom: 14px; }
+    .footer-links { display: flex; flex-direction: column; gap: 8px; }
+    .footer-links a, .footer-links span { font-size: 13px; color: #9a9a9a; transition: var(--transition); }
+    .footer-links a:hover { color: #fff; }
+    .footer-wa-link { display: flex; align-items: center; gap: 7px; color: var(--green) !important; font-weight: 700 !important; }
+    .footer-bottom { border-top: 1px solid #2a2a2a; padding-top: 20px; text-align: center; font-size: 12px; max-width: 1000px; margin: 0 auto; }
+
+    /* ══ WA FLOAT ══ */
+    #wa-float {
+      position: fixed; bottom: 22px; right: 18px; z-index: 250;
+      width: 58px; height: 58px; border-radius: 50%;
+      background: var(--green);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+      text-decoration: none;
+      animation: pulse-wa 2.5s ease-in-out infinite;
+    }
+    #wa-float:hover { background: var(--green-dark); transform: scale(1.08); }
+    @keyframes pulse-wa {
+      0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.45); }
+      50% { box-shadow: 0 4px 28px rgba(37,211,102,0.7); }
+    }
+    #wa-float svg { width: 30px; height: 30px; color: #fff; }
+
+    /* ══ MOBILE MENU ══ */
+    .mobile-menu-btn { display: none; background: none; border: none; color: var(--text); cursor: pointer; padding: 5px; }
+    .mobile-menu-btn svg { width: 24px; height: 24px; }
+    
+    #mobile-menu { display: none; background: var(--bg); border-bottom: 1px solid var(--border); padding: 10px 20px; }
+    #mobile-menu.open { display: flex; flex-direction: column; gap: 10px; }
+    #mobile-menu a { padding: 10px 0; font-size: 15px; font-weight: 600; color: var(--text); border-bottom: 1px solid var(--border); }
+    #mobile-menu a:last-child { border-bottom: none; }
+
+    /* ══ RESPONSIVE ══ */
+    @media (max-width: 900px) {
+      .sidebar { display: none; }
+      .page-body { padding: 0 0 80px; }
+    }
+    /* Barre de chips de catégorie pour mobile (remplace le drawer) */
+    .mobile-cats {
+      display: none;
+      overflow-x: auto; -webkit-overflow-scrolling: touch;
+      padding: 10px 12px;
+      gap: 7px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      scrollbar-width: none;
+    }
+    .mobile-cats::-webkit-scrollbar { display: none; }
+    @media (max-width: 900px) { .mobile-cats { display: flex; } }
+    .cat-chip {
+      flex-shrink: 0; padding: 7px 16px; border-radius: 999px;
+      font-size: 13px; font-weight: 700;
+      border: 1.5px solid var(--border);
+      background: #fff; color: var(--text2);
+      cursor: pointer; transition: var(--transition); white-space: nowrap;
+      font-family: inherit;
+    }
+    .cat-chip:hover { border-color: var(--gold); color: var(--gold); }
+    .cat-chip.active { background: var(--text); color: #fff; border-color: var(--text); }
+    @media (min-width: 901px) { .filter-drawer-btn { display: none; } }
+    @media (max-width: 680px) {
+      .nav-links { display: none; }
+      .nav-brand-sub { display: none; }
+      .btn-wa-nav .wa-label { display: none; }
+      .mobile-menu-btn { display: block; }
+    }
+    @media (max-width: 480px) { .sort-row { display: none; } }
+    @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+
+    /* Drawer (conservé pour compatibilité) */
+    #mobile-drawer { display: none; }
+    .drawer-overlay { display: none; }
+
+  </style>
+</head>
+<body>
+
+<!-- ══ PROMO BAR ══ -->
+<div class="promo-bar">
+  <span>⚡ Livraison WhatsApp</span> en moins de 10 min
+  <span class="sep">|</span>
+  <span>📲 Orange Money · MTN MoMo</span>
+  <span class="sep">|</span>
+  Formats <span>DST · JEF · PES · DSB</span>
+</div>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <div class="nav-brand-icon">🪡</div>
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Motif <em>237</em></span>
+      <span class="nav-brand-sub">Broderie Numérique</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="catalogue.html" class="nav-link active">Catalogue</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="contact.html#faq" class="nav-link">FAQ</a>
+  </div>
+  <div class="nav-search">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    <input type="search" id="nav-search-input" placeholder="Design, format, machine…" autocomplete="off">
+  </div>
+  <a href="https://wa.me/237693565223?text=Bonjour%20Motif%20237%20!" target="_blank" rel="noopener" class="btn-wa-nav">
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-label">Commander</span>
+  </a>
+  <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu" onclick="toggleMenu()">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+  </button>
+</nav>
+
+<div id="mobile-menu">
+  <a href="index.html">Accueil</a>
+  <a href="catalogue.html">Catalogue</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html#faq">FAQ</a>
+</div>
+
+<!-- ══ PAGE HEADER ══ -->
+<div class="page-header">
+  <nav class="breadcrumb" aria-label="Fil d'ariane">
+    <a href="index.html">Accueil</a>
+    <span class="sep">›</span>
+    <span>Catalogue</span>
+  </nav>
+  <h1>Catalogue de Fichiers de Broderie</h1>
+</div>
+
+<!-- ══ CHIPS CATÉGORIE MOBILE ══ -->
+<div class="mobile-cats" id="mobile-cats" role="group" aria-label="Filtrer par catégorie"></div>
+
+
+<!-- ══ BODY ══ -->
+<div class="page-body">
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar">
+    <!-- Recherche -->
+    <div class="sidebar-section">
+      <span class="sidebar-label">Recherche</span>
+      <div class="sidebar-search">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input type="text" id="search-input" placeholder="Design, machine..." aria-label="Rechercher">
+      </div>
+    </div>
+
+    <!-- Catégorie -->
+    <div class="sidebar-section">
+      <span class="sidebar-label">Catégorie</span>
+      <div class="filter-list" id="cat-filter"></div>
+    </div>
+
+    <!-- Format -->
+    <div class="sidebar-section">
+      <span class="sidebar-label">Format fichier</span>
+      <div class="filter-list" id="fmt-filter"></div>
+    </div>
+
+    <!-- Niveau -->
+    <div class="sidebar-section">
+      <span class="sidebar-label">Niveau</span>
+      <div class="filter-list" id="niveau-filter"></div>
+    </div>
+
+    <!-- Reset -->
+    <button class="reset-btn" onclick="resetFilters()">↺ Réinitialiser les filtres</button>
+  </aside>
+
+  <!-- ── MAIN ── -->
+  <main class="main-content">
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <button class="filter-drawer-btn" onclick="openDrawer()">Filtres</button>
+        <div class="result-count" id="result-count"></div>
+      </div>
+      <div class="sort-row">
+        <button class="sort-btn active" data-sort="default">Défaut</button>
+        <button class="sort-btn" data-sort="prix-asc">Prix ↑</button>
+        <button class="sort-btn" data-sort="prix-desc">Prix ↓</button>
+        <button class="sort-btn" data-sort="points">+ Points</button>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="motif-grid" id="motif-grid">
+      <div class="product-card"><div class="card-img" style="background:#f0f0f0;animation:shimmer 1.4s infinite;background-size:200%;background-image:linear-gradient(90deg,#f0f0f0 25%,#e6e6e6 50%,#f0f0f0 75%)"></div><div class="card-body"><div style="height:11px;background:#f0f0f0;border-radius:4px;margin-bottom:8px;width:50%"></div><div style="height:14px;background:#f0f0f0;border-radius:4px;margin-bottom:8px;width:80%"></div><div style="height:32px;background:#ebebeb;border-radius:7px"></div></div></div>
+      <div class="product-card"><div class="card-img" style="background:#f0f0f0;animation:shimmer 1.4s infinite;background-size:200%;background-image:linear-gradient(90deg,#f0f0f0 25%,#e6e6e6 50%,#f0f0f0 75%)"></div><div class="card-body"><div style="height:11px;background:#f0f0f0;border-radius:4px;margin-bottom:8px;width:50%"></div><div style="height:14px;background:#f0f0f0;border-radius:4px;margin-bottom:8px;width:80%"></div><div style="height:32px;background:#ebebeb;border-radius:7px"></div></div></div>
+      <div class="product-card"><div class="card-img" style="background:#f0f0f0;animation:shimmer 1.4s infinite;background-size:200%;background-image:linear-gradient(90deg,#f0f0f0 25%,#e6e6e6 50%,#f0f0f0 75%)"></div><div class="card-body"><div style="height:11px;background:#f0f0f0;border-radius:4px;margin-bottom:8px;width:50%"></div><div style="height:14px;background:#f0f0f0;border-radius:4px;margin-bottom:8px;width:80%"></div><div style="height:32px;background:#ebebeb;border-radius:7px"></div></div></div>
+      <div class="product-card"><div class="card-img" style="background:#f0f0f0;animation:shimmer 1.4s infinite;background-size:200%;background-image:linear-gradient(90deg,#f0f0f0 25%,#e6e6e6 50%,#f0f0f0 75%)"></div><div class="card-body"><div style="height:11px;background:#f0f0f0;border-radius:4px;margin-bottom:8px;width:50%"></div><div style="height:14px;background:#f0f0f0;border-radius:4px;margin-bottom:8px;width:80%"></div><div style="height:32px;background:#ebebeb;border-radius:7px"></div></div></div>
+    </div>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="empty-state">
+      <div class="emoji">🔍</div>
+      <h3>Aucun fichier trouvé</h3>
+      <p>Essayez d'autres filtres ou une autre recherche.</p>
+      <button onclick="resetFilters()">Voir tous les fichiers</button>
+    </div>
+  </main>
+</div>
+
+<!-- Drawer Mobile (conservé pour compatibilité) -->
+<div class="drawer-overlay" id="drawer-overlay"></div>
+<div id="mobile-drawer"></div>
+
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Motif <em>237</em></div>
+      <p class="footer-brand-desc">Fichiers de broderie numérique testés sur machine. Compatibles avec toutes les grandes marques. Basé à Yaoundé, Cameroun.</p>
+      <div class="footer-fmts">
+        <span class="footer-fmt">.DST</span>
+        <span class="footer-fmt">.JEF</span>
+        <span class="footer-fmt">.PES</span>
+        <span class="footer-fmt">.DSB</span>
+        <span class="footer-fmt">.EXP</span>
+        <span class="footer-fmt">.HUS</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Navigation</div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#faq">FAQ</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <div class="footer-links">
+        <a href="https://wa.me/237693565223" target="_blank" class="footer-wa-link">
+          <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          +237 6 93 56 52 23
+        </a>
+        <span>📍 Yaoundé, Cameroun</span>
+        <span>🕐 Lun–Sam 8h–20h</span>
+        <span>📲 Orange Money · MTN MoMo</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2024 Motif 237 — Tous droits réservés · Yaoundé, Cameroun 🇨🇲</div>
+</footer>
+
+<!-- ══ WA FLOAT ══ -->
+<a href="https://wa.me/237693565223?text=Bonjour%20Motif%20237%20!" target="_blank" rel="noopener" id="wa-float" aria-label="WhatsApp">
+  <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="js/app.js"></script>
+<script>
+  const { DataService, WhatsAppService } = window.Motif237;
+  const WA_SVG = `<svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>`;
+
+  let allMotifs = [], currentCat = 'Tous', currentFmt = '', currentNiveau = '', currentSort = 'default', currentSearch = '';
+
+  // URL params
+  const urlP = new URLSearchParams(window.location.search);
+  if (urlP.get('cat')) currentCat = urlP.get('cat');
+  if (urlP.get('q'))   currentSearch = urlP.get('q');
+
+  async function init() {
+    allMotifs = await DataService.fetchAll();
+    buildCatFilter();
+    buildFmtFilter();
+    buildNiveauFilter();
+    initSortBtns();
+    if (currentSearch) {
+      document.getElementById('search-input').value = currentSearch;
+      document.getElementById('nav-search-input').value = currentSearch;
+    }
+    renderGrid();
+  }
+
+  function buildCatFilter() {
+    const cats = ['Tous', ...new Set(allMotifs.map(m => m.categorie))];
+    // Sidebar (desktop)
+    document.getElementById('cat-filter').innerHTML = cats.map(c => `
+      <button onclick="setCat('${c}')" data-cat="${c}"
+              class="filter-item ${c === currentCat ? 'active' : ''}">
+        ${c} <span class="filter-count">${c === 'Tous' ? allMotifs.length : allMotifs.filter(m=>m.categorie===c).length}</span>
+      </button>`).join('');
+    // Chips mobile
+    document.getElementById('mobile-cats').innerHTML = cats.map(c => `
+      <button class="cat-chip ${c === currentCat ? 'active' : ''}" onclick="setCat('${c}')" data-mobile-cat="${c}">${c}</button>
+    `).join('');
+  }
+
+
+  function buildFmtFilter() {
+    const fmts = [...new Set(allMotifs.flatMap(m => m.formats || []))].sort();
+    document.getElementById('fmt-filter').innerHTML = fmts.map(f =>
+      `<button onclick="setFmt('${f}')" data-fmt="${f}"
+               class="fmt-item ${f === currentFmt ? 'active' : ''}">.${f}</button>`
+    ).join('');
+  }
+
+  function buildNiveauFilter() {
+    const niveaux = [...new Set(allMotifs.map(m => m.niveau).filter(Boolean))];
+    document.getElementById('niveau-filter').innerHTML = niveaux.map(n =>
+      `<button onclick="setNiveau('${n}')" data-niv="${n}"
+               class="filter-item ${n === currentNiveau ? 'active' : ''}" style="font-size:12px">${n}</button>`
+    ).join('');
+  }
+
+  function initSortBtns() {
+    document.querySelectorAll('.sort-btn').forEach(btn => btn.addEventListener('click', () => {
+      currentSort = btn.dataset.sort;
+      document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderGrid();
+    }));
+  }
+
+  function setCat(cat) {
+    currentCat = cat;
+    document.querySelectorAll('[data-cat]').forEach(b => b.classList.toggle('active', b.dataset.cat === cat));
+    document.querySelectorAll('[data-mobile-cat]').forEach(b => b.classList.toggle('active', b.dataset.mobileCat === cat));
+    renderGrid();
+  }
+
+  function setFmt(fmt) {
+    currentFmt = currentFmt === fmt ? '' : fmt;
+    document.querySelectorAll('[data-fmt]').forEach(b => b.classList.toggle('active', b.dataset.fmt === currentFmt));
+    renderGrid();
+  }
+  function setNiveau(n) {
+    currentNiveau = currentNiveau === n ? '' : n;
+    document.querySelectorAll('[data-niv]').forEach(b => b.classList.toggle('active', b.dataset.niv === currentNiveau));
+    renderGrid();
+  }
+  function resetFilters() {
+    currentCat = 'Tous'; currentFmt = ''; currentNiveau = ''; currentSearch = ''; currentSort = 'default';
+    document.getElementById('search-input').value = '';
+    document.getElementById('nav-search-input').value = '';
+    document.querySelectorAll('.sort-btn').forEach((b,i) => b.classList.toggle('active', i===0));
+    buildCatFilter(); buildFmtFilter(); buildNiveauFilter(); renderGrid();
+  }
+
+  function renderGrid() {
+    let filtered = allMotifs;
+    if (currentCat !== 'Tous') filtered = filtered.filter(m => m.categorie === currentCat);
+    if (currentFmt) filtered = filtered.filter(m => m.formats?.includes(currentFmt));
+    if (currentNiveau) filtered = filtered.filter(m => m.niveau === currentNiveau);
+    if (currentSearch.trim()) {
+      const q = currentSearch.toLowerCase();
+      filtered = filtered.filter(m =>
+        m.nom.toLowerCase().includes(q) || m.description.toLowerCase().includes(q) ||
+        m.categorie.toLowerCase().includes(q) || m.formats?.some(f => f.toLowerCase().includes(q)) ||
+        m.machines_compatibles?.some(mc => mc.toLowerCase().includes(q)) ||
+        m.tags?.some(t => t.toLowerCase().includes(q))
+      );
+    }
+    if (currentSort === 'prix-asc')  filtered = [...filtered].sort((a,b) => (a.prix||0)-(b.prix||0));
+    if (currentSort === 'prix-desc') filtered = [...filtered].sort((a,b) => (b.prix||0)-(a.prix||0));
+    if (currentSort === 'points')    filtered = [...filtered].sort((a,b) => (b.points||0)-(a.points||0));
+
+    const grid  = document.getElementById('motif-grid');
+    const empty = document.getElementById('empty-state');
+    document.getElementById('result-count').innerHTML = `<strong>${filtered.length}</strong> fichier${filtered.length > 1 ? 's' : ''} trouvé${filtered.length > 1 ? 's' : ''}`;
+
+    if (!filtered.length) { grid.innerHTML = ''; empty.style.display = 'block'; return; }
+    empty.style.display = 'none';
+    grid.innerHTML = filtered.map((m, i) => `
+      <div class="card-enter" style="animation-delay:${i * 0.04}s">
+        ${renderCard(m)}
+      </div>`).join('');
+  }
+
+  function renderCard(m) {
+    const prixTxt = m.prix ? ` (${m.prix.toLocaleString('fr')} FCFA)` : '';
+    const msg = `Bonjour Motif 237 ! \ud83d\udc4b\nJe veux commander le motif : *${m.nom}*${prixTxt}.\n\nQuelle marque de machine avez-vous ? (Brother, Janome, Tajima\u2026)\n\u2192 Pr\u00e9cisez-moi votre machine et je vous envoie le bon fichier + les d\u00e9tails de paiement.`;
+    const waLink = `https://wa.me/237693565223?text=${encodeURIComponent(msg)}`;
+    const fmts = (m.formats || []).slice(0,4).map(f => `<span class="fmt fmt-${f}">.${f}</span>`).join('');
+    const nCls = {'D\u00e9butant':'badge-debutant','Standard':'badge-standard','Avanc\u00e9':'badge-avance'}[m.niveau] || '';
+    const specs = [
+      m.points   ? `\ud83e\uddf5 ${m.points.toLocaleString('fr')} pts` : '',
+      m.couleurs ? `\ud83c\udfa8 ${m.couleurs} fils` : '',
+      m.dimensions && m.dimensions.largeur ? `\ud83d\udcd0 ${m.dimensions.largeur}\u00d7${m.dimensions.hauteur}mm` : '',
+    ].filter(Boolean).map(s => `<span>${s}</span>`).join('');
+    return `
+      <div class="product-card" onclick="window.location.href='motif.html?id=${m.id}'" aria-label="${m.nom}">
+        <div class="card-img">
+          <img src="${m.image}" alt="${m.nom}" loading="lazy">
+          ${m.vedette ? '<span class="badge-top">\u2605 TOP</span>' : ''}
+          ${m.niveau  ? `<span class="badge-niveau ${nCls}">${m.niveau}</span>` : ''}
+        </div>
+        <div class="card-body">
+          <div class="card-cat">${m.categorie}</div>
+          <div class="card-name">${m.nom}</div>
+          <div class="card-specs">${specs}</div>
+          <div class="card-fmts">${fmts}</div>
+          <div class="card-bottom">
+            <div class="card-price">${m.prix ? `${m.prix.toLocaleString('fr')} <small>FCFA</small>` : ''}</div>
+            <div class="card-btns">
+              <a href="${waLink}" target="_blank" rel="noopener noreferrer"
+                 onclick="event.stopPropagation()" class="btn-wa-card" aria-label="Commander ${m.nom}">
+                ${WA_SVG} Commander
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+
+  // Synchro recherche nav ↔ sidebar
+  function syncSearch(val) { currentSearch = val; renderGrid(); }
+  let st;
+  document.getElementById('search-input').addEventListener('input', e => {
+    clearTimeout(st);
+    document.getElementById('nav-search-input').value = e.target.value;
+    st = setTimeout(() => syncSearch(e.target.value), 280);
+  });
+  document.getElementById('nav-search-input').addEventListener('input', e => {
+    clearTimeout(st);
+    document.getElementById('search-input').value = e.target.value;
+    st = setTimeout(() => syncSearch(e.target.value), 280);
+  });
+
+  // Menu mobile
+  function toggleMenu() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+
+  // Drawer
+  function openDrawer() {
+    document.getElementById('drawer-overlay').classList.add('open');
+    document.getElementById('mobile-drawer').classList.add('open');
+    // Copier le contenu de la sidebar dans le drawer si pas déjà fait
+    if (!document.getElementById('drawer-filters').innerHTML) {
+      document.getElementById('drawer-filters').innerHTML = document.querySelector('.sidebar').innerHTML;
+    }
+  }
+  function closeDrawer() {
+    document.getElementById('drawer-overlay').classList.remove('open');
+    document.getElementById('mobile-drawer').classList.remove('open');
+  }
+
+  window.setCat = setCat; window.setFmt = setFmt; window.setNiveau = setNiveau; window.resetFilters = resetFilters; window.openDrawer = openDrawer; window.closeDrawer = closeDrawer;
+  init();
+</script>
+</body>
+</html>

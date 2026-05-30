@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & FAQ — Motif 237 | Broderie Numérique Cameroun</title>
+  <meta name="description" content="Commandez vos fichiers de broderie numérique par WhatsApp. DST, JEF, PES, DSB. Livraison en 10 min. Yaoundé, Cameroun.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪡</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #ffffff; --bg2: #f8f8f6; --bg3: #f0ede6;
+      --border: #e5e5e5; --text: #1a1a1a; --text2: #5a5a5a; --text3: #9a9a9a;
+      --gold: #b8862e; --gold-light: #d4a843; --gold-bg: #fdf8f0;
+      --green: #25D366; --green-dark: #1da851;
+      --radius: 10px; --radius-lg: 14px;
+      --transition: all 0.22s ease;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+
+    /* PROMO BAR */
+    .promo-bar { background: var(--text); color: #fff; text-align: center; padding: 9px 16px; font-size: 12.5px; font-weight: 500; letter-spacing: 0.01em; }
+    .promo-bar span { color: var(--gold-light); font-weight: 700; }
+    .promo-bar .sep { margin: 0 10px; opacity: 0.35; }
+
+    /* NAV */
+    nav { position: sticky; top: 0; z-index: 200; background: var(--bg); border-bottom: 1px solid var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.06); display: flex; align-items: center; padding: 0 20px; height: 60px; gap: 16px; }
+    .nav-brand { font-weight: 900; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 9px; white-space: nowrap; flex-shrink: 0; }
+    .nav-brand-icon { width: 36px; height: 36px; background: var(--text); border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+    .nav-brand-text { display: flex; flex-direction: column; line-height: 1; }
+    .nav-brand-name { font-size: 17px; font-weight: 900; letter-spacing: -0.5px; }
+    .nav-brand-name em { color: var(--gold); font-style: normal; }
+    .nav-brand-sub { font-family: 'JetBrains Mono', monospace; font-size: 8.5px; color: var(--text3); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 1px; }
+    .nav-links { display: flex; align-items: center; gap: 2px; flex-shrink: 0; }
+    .nav-link { padding: 6px 13px; border-radius: 7px; font-size: 13px; font-weight: 600; color: var(--text2); transition: var(--transition); }
+    .nav-link:hover { background: var(--bg2); color: var(--text); }
+    .nav-link.active { color: var(--gold); }
+    .nav-search { flex: 1; max-width: 380px; position: relative; }
+    .nav-search svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; color: var(--text3); pointer-events: none; }
+    .nav-search input { width: 100%; padding: 8px 12px 8px 34px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 13px; font-family: inherit; background: var(--bg2); color: var(--text); outline: none; transition: var(--transition); }
+    .nav-search input:focus { border-color: var(--gold); background: #fff; box-shadow: 0 0 0 3px rgba(184,134,46,0.1); }
+    .btn-wa-nav { display: flex; align-items: center; gap: 7px; flex-shrink: 0; background: var(--green); color: #fff; font-weight: 700; font-size: 13px; padding: 9px 16px; border-radius: 9px; transition: var(--transition); box-shadow: 0 2px 8px rgba(37,211,102,0.25); }
+    .btn-wa-nav:hover { background: var(--green-dark); }
+    .btn-wa-nav svg { width: 16px; height: 16px; }
+
+    /* PAGE */
+    .page-header { background: var(--bg); border-bottom: 1px solid var(--border); padding: 28px 20px 22px; }
+    .page-header-inner { max-width: 760px; margin: 0 auto; }
+    .breadcrumb { font-size: 12px; color: var(--text3); margin-bottom: 8px; }
+    .breadcrumb a { color: var(--text3); }
+    .breadcrumb a:hover { color: var(--text2); }
+    .page-header h1 { font-size: 26px; font-weight: 900; margin-bottom: 4px; }
+    .page-header p { font-size: 14px; color: var(--text2); }
+    .page-body { max-width: 760px; margin: 0 auto; padding: 32px 20px 60px; }
+
+    /* WA CARD */
+    .wa-card { background: var(--green); border-radius: 16px; padding: 30px 24px; text-align: center; margin-bottom: 24px; color: #fff; }
+    .wa-card .ico { font-size: 42px; margin-bottom: 10px; }
+    .wa-card h2 { font-size: 22px; font-weight: 900; margin-bottom: 6px; }
+    .wa-card p { font-size: 14px; opacity: 0.9; margin-bottom: 16px; line-height: 1.6; }
+    .wa-card .fmts { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-bottom: 18px; }
+    .fmt { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
+    .fmt-DST{background:#fef3c7;color:#92400e;} .fmt-JEF{background:#dbeafe;color:#1e40af;}
+    .fmt-PES{background:#dcfce7;color:#166534;} .fmt-DSB{background:#fee2e2;color:#991b1b;}
+    .fmt-EXP{background:#f3e8ff;color:#6b21a8;} .fmt-HUS{background:#fce7f3;color:#9d174d;}
+    .btn-wa-main { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--green); font-weight: 900; font-size: 16px; padding: 13px 28px; border-radius: 11px; transition: var(--transition); }
+    .btn-wa-main:hover { background: #f0fff5; transform: translateY(-1px); }
+    .btn-wa-main svg { width: 20px; height: 20px; }
+    .wa-card .infos { margin-top: 12px; font-size: 12px; opacity: 0.75; }
+
+    /* INFO GRID */
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 28px; }
+    @media (max-width: 460px) { .info-grid { grid-template-columns: 1fr; } }
+    .info-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
+    .info-card .label { font-size: 10px; font-weight: 700; color: var(--text3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .info-card .value { font-size: 14px; font-weight: 700; color: var(--text); }
+    .info-card .value a { color: var(--green); }
+
+    /* SECTION */
+    .section { margin-bottom: 32px; }
+    .section-title { font-size: 18px; font-weight: 900; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
+
+    /* STEPS */
+    .step-item { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .step-item:last-child { border-bottom: none; }
+    .step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--text); color: #fff; font-weight: 900; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .step-num.ok { background: var(--green); }
+    .step-content h4 { font-size: 14px; font-weight: 800; margin-bottom: 2px; }
+    .step-content p { font-size: 13px; color: var(--text2); line-height: 1.5; }
+
+    /* FAQ */
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 8px; overflow: hidden; }
+    .faq-q { width: 100%; text-align: left; padding: 14px 16px; font-size: 14px; font-weight: 700; color: var(--text); background: var(--bg); border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 10px; transition: var(--transition); font-family: inherit; }
+    .faq-q:hover { background: var(--bg2); }
+    .faq-icon { font-size: 18px; color: var(--text3); transition: transform 0.2s; flex-shrink: 0; font-style: normal; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 16px 14px; font-size: 13px; color: var(--text2); line-height: 1.7; border-top: 1px solid var(--border); }
+    .faq-a code { font-family: 'JetBrains Mono', monospace; background: var(--bg2); padding: 1px 6px; border-radius: 3px; font-size: 11px; color: var(--text); }
+    .faq-item.open .faq-a { display: block; padding-top: 12px; }
+
+    /* FOOTER */
+    footer { background: var(--text); color: #9a9a9a; padding: 40px 20px 28px; }
+    .footer-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px; margin-bottom: 32px; }
+    @media (max-width: 640px) { .footer-grid { grid-template-columns: 1fr; gap: 24px; } }
+    .footer-brand-name { font-size: 20px; font-weight: 900; color: #fff; margin-bottom: 6px; }
+    .footer-brand-name em { color: var(--gold-light); font-style: normal; }
+    .footer-brand-desc { font-size: 13px; line-height: 1.6; margin-bottom: 14px; }
+    .footer-fmts { display: flex; flex-wrap: wrap; gap: 5px; }
+    .footer-fmt { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 4px; background: rgba(255,255,255,0.08); color: #ccc; }
+    .footer-heading { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #5a5a5a; margin-bottom: 14px; }
+    .footer-links { display: flex; flex-direction: column; gap: 9px; }
+    .footer-links a, .footer-links span { font-size: 13px; color: #9a9a9a; transition: var(--transition); }
+    .footer-links a:hover { color: #fff; }
+    .footer-wa-link { color: var(--green) !important; font-weight: 700 !important; display: flex; align-items: center; gap: 6px; }
+    .footer-bottom { border-top: 1px solid #2a2a2a; padding-top: 20px; text-align: center; font-size: 12px; max-width: 1000px; margin: 0 auto; }
+
+    /* WA FLOAT */
+    #wa-float { position: fixed; bottom: 22px; right: 18px; z-index: 250; width: 58px; height: 58px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.45); text-decoration: none; animation: pulse-wa 2.5s ease-in-out infinite; }
+    #wa-float:hover { background: var(--green-dark); }
+    @keyframes pulse-wa { 0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.45)} 50%{box-shadow:0 4px 28px rgba(37,211,102,0.7)} }
+    #wa-float svg { width: 30px; height: 30px; color: #fff; }
+
+    /* MOBILE MENU */
+    .mobile-menu-btn { display: none; background: none; border: none; color: var(--text); cursor: pointer; padding: 5px; }
+    .mobile-menu-btn svg { width: 24px; height: 24px; }
+    #mobile-menu { display: none; background: var(--bg); border-bottom: 1px solid var(--border); padding: 10px 20px; }
+    #mobile-menu.open { display: flex; flex-direction: column; gap: 10px; }
+    #mobile-menu a { padding: 10px 0; font-size: 15px; font-weight: 600; color: var(--text); border-bottom: 1px solid var(--border); }
+    #mobile-menu a:last-child { border-bottom: none; }
+
+    @media (max-width: 680px) { .nav-links { display: none; } .nav-brand-sub { display: none; } .btn-wa-nav .wa-label { display: none; } .mobile-menu-btn { display: block; } }
+  </style>
+</head>
+<body>
+
+<!-- PROMO BAR -->
+<div class="promo-bar">
+  <span>⚡ Livraison WhatsApp</span> en moins de 10 min
+  <span class="sep">|</span>
+  <span>📲 Orange Money · MTN MoMo</span>
+  <span class="sep">|</span>
+  Formats <span>DST · JEF · PES · DSB</span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <div class="nav-brand-icon">🪡</div>
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Motif <em>237</em></span>
+      <span class="nav-brand-sub">Broderie Numérique</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+    <a href="contact.html#faq" class="nav-link">FAQ</a>
+  </div>
+  <div class="nav-search">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    <input type="search" id="search" placeholder="Design, format, machine…" autocomplete="off"
+           onkeydown="if(event.key==='Enter'&&this.value.trim())window.location.href='index.html?q='+encodeURIComponent(this.value.trim())">
+  </div>
+  <a href="https://wa.me/237693565223?text=Bonjour%20Motif%20237%20!" target="_blank" rel="noopener" class="btn-wa-nav">
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-label">Commander</span>
+  </a>
+  <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu" onclick="toggleMenu()">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+  </button>
+</nav>
+
+<div id="mobile-menu">
+  <a href="index.html">Accueil</a>
+  <a href="catalogue.html">Catalogue</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html#faq">FAQ</a>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> › Contact & FAQ</div>
+    <h1>Contact & FAQ</h1>
+    <p>Commandez vos fichiers de broderie numérique par WhatsApp. Réponse rapide, envoi immédiat.</p>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="page-body">
+
+  <!-- WA Card -->
+  <div class="wa-card">
+    <div class="ico">📲</div>
+    <h2>Commandez sur WhatsApp</h2>
+    <p>Dites-nous le design qui vous intéresse et votre format machine.<br>On vous envoie le fichier dès réception du paiement.</p>
+    <div class="fmts">
+      <span class="fmt fmt-DST">.DST Tajima</span>
+      <span class="fmt fmt-JEF">.JEF Janome</span>
+      <span class="fmt fmt-PES">.PES Brother</span>
+      <span class="fmt fmt-DSB">.DSB Barudan</span>
+      <span class="fmt fmt-EXP">.EXP Melco</span>
+      <span class="fmt fmt-HUS">.HUS Husqvarna</span>
+    </div>
+    <a href="https://wa.me/237693565223?text=Bonjour%20Motif%20237%20!%20%F0%9F%91%8B%0AJe%20veux%20commander%20un%20fichier%20de%20broderie.%0ADesign%20%3A%20%5B...%5D%0AFormat%20%3A%20%5BDST%2FJEF%2FPES%5D"
+       target="_blank" rel="noopener" class="btn-wa-main">
+      <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Envoyer un message
+    </a>
+    <div class="infos">Contact : <b>Mamoudou bia</b> · Yaoundé, Cameroun</div>
+    <div class="infos">🕐 Lun–Sam 8h–20h · Dim 10h–18h</div>
+  </div>
+
+  <!-- Infos rapides -->
+  <div class="info-grid">
+    <div class="info-card"><div class="label">WhatsApp</div><div class="value"><a href="https://wa.me/237693565223" target="_blank">+237 6 93 56 52 23</a></div></div>
+    <div class="info-card"><div class="label">Délai d'envoi</div><div class="value">⚡ Moins de 10 minutes</div></div>
+    <div class="info-card"><div class="label">Paiement</div><div class="value">📲 Orange Money · MTN MoMo</div></div>
+    <div class="info-card"><div class="label">Localisation</div><div class="value">📍 Yaoundé 🇨🇲</div></div>
+  </div>
+
+  <!-- Comment commander -->
+  <div class="section">
+    <div class="section-title">Comment commander ?</div>
+    <div class="step-item"><div class="step-num">1</div><div class="step-content"><h4>Choisissez votre design</h4><p>Parcourez le catalogue sur la page d'accueil et repérez le motif qui vous convient.</p></div></div>
+    <div class="step-item"><div class="step-num">2</div><div class="step-content"><h4>Cliquez "Commander"</h4><p>WhatsApp s'ouvre avec un message pré-rempli incluant le nom du design et le format choisi.</p></div></div>
+    <div class="step-item"><div class="step-num">3</div><div class="step-content"><h4>Payez par Mobile Money</h4><p>On vous envoie le numéro et le montant. Réglez par Orange Money ou MTN MoMo.</p></div></div>
+    <div class="step-item"><div class="step-num ok">✓</div><div class="step-content"><h4>Recevez votre fichier</h4><p>Le fichier (.DST, .JEF, .PES…) vous est envoyé directement sur WhatsApp. Brodez immédiatement !</p></div></div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section" id="faq">
+    <div class="section-title">Questions fréquentes</div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Quels formats de fichiers proposez-vous ?<i class="faq-icon">+</i></button>
+      <div class="faq-a">Nous proposons : <code>.DST</code> (Tajima), <code>.JEF</code> (Janome/Elna), <code>.PES</code> (Brother/Babylock), <code>.DSB</code> (Barudan), <code>.EXP</code> (Melco/Bernina), <code>.HUS</code> (Husqvarna Viking). Un autre format ? Contactez-nous, on s'adapte.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Je ne connais pas mon format — comment savoir ?<i class="faq-icon">+</i></button>
+      <div class="faq-a">Envoyez-nous la <strong>marque et le modèle</strong> de votre machine sur WhatsApp (ex : "Brother PE770") et on choisit le bon format pour vous. En résumé : Tajima → <code>.DST</code> · Janome → <code>.JEF</code> · Brother → <code>.PES</code>.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Comment je reçois le fichier après paiement ?<i class="faq-icon">+</i></button>
+      <div class="faq-a">Le fichier vous est envoyé directement sur WhatsApp. Téléchargez-le puis transférez-le sur votre machine à broder via clé USB, carte SD ou câble USB selon votre modèle.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Puis-je commander un motif personnalisé (numérisation) ?<i class="faq-icon">+</i></button>
+      <div class="faq-a">Oui ! Envoyez une photo de votre logo ou design sur WhatsApp. On vous fait un devis. Délai : 24h à 48h selon la complexité.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Les fichiers fonctionnent-ils sur machines industrielles ?<i class="faq-icon">+</i></button>
+      <div class="faq-a">Oui. Le format <code>.DST</code> est le standard des machines industrielles Tajima. Précisez que c'est pour une machine industrielle lors de la commande.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Puis-je réutiliser le fichier plusieurs fois ?<i class="faq-icon">+</i></button>
+      <div class="faq-a">Oui, le fichier vous appartient. Vous pouvez broder le même design autant de fois que vous le souhaitez sur vos machines. La revente du fichier est interdite.</div>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Motif <em>237</em></div>
+      <p class="footer-brand-desc">Fichiers de broderie numérique testés sur machine. Basé à Yaoundé, Cameroun.</p>
+      <div class="footer-fmts">
+        <span class="footer-fmt">.DST</span><span class="footer-fmt">.JEF</span>
+        <span class="footer-fmt">.PES</span><span class="footer-fmt">.DSB</span>
+        <span class="footer-fmt">.EXP</span><span class="footer-fmt">.HUS</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Navigation</div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#faq">FAQ</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <div class="footer-links">
+        <a href="https://wa.me/237693565223" target="_blank" class="footer-wa-link">
+          <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          +237 6 93 56 52 23
+        </a>
+        <span>📍 Yaoundé, Cameroun</span>
+        <span>🕐 Lun–Sam 8h–20h</span>
+        <span>📲 Orange Money · MTN MoMo</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2024 Motif 237 — Tous droits réservés · Yaoundé, Cameroun 🇨🇲</div>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/237693565223?text=Bonjour%20Motif%20237%20!" target="_blank" rel="noopener" id="wa-float" aria-label="WhatsApp">
+  <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>

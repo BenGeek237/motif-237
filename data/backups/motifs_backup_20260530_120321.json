@@ -1,0 +1,1549 @@
+[
+  {
+    "id": 1,
+    "nom": "Fleur Royale Mariage",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.39.jpeg",
+    "categorie": "Mariage",
+    "description": "Motif floral élégant pour robes de mariée et tenues cérémonielles. Numérisé avec précision pour un rendu parfait sur tissu satin ou organza.",
+    "prix": 2500,
+    "devise": "FCFA",
+    "vedette": true,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 18450,
+    "couleurs": 4,
+    "dimensions": {
+      "largeur": 120,
+      "hauteur": 95
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother",
+      "Barudan",
+      "Bernina"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "floral",
+      "mariage",
+      "fleur",
+      "satin"
+    ]
+  },
+  {
+    "id": 2,
+    "nom": "Croix Bénie",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.41.jpeg",
+    "categorie": "Religieux",
+    "description": "Croix dorée et colombe numérisée pour vêtements liturgiques, nappes d'autel, étoles et tenues de communion. Finition satinée professionnelle.",
+    "prix": 2000,
+    "devise": "FCFA",
+    "vedette": true,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB",
+      "EXP"
+    ],
+    "points": 12800,
+    "couleurs": 3,
+    "dimensions": {
+      "largeur": 80,
+      "hauteur": 100
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother",
+      "Barudan",
+      "Bernina",
+      "Singer"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "croix",
+      "religieux",
+      "église",
+      "communion"
+    ]
+  },
+  {
+    "id": 3,
+    "nom": "Papillon Joyeux",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.43.jpeg",
+    "categorie": "Enfants",
+    "description": "Papillon coloré et étoiles pour vêtements enfants, cartables, serviettes personnalisées. Couleurs vives numérisées avec soin.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": true,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES"
+    ],
+    "points": 9200,
+    "couleurs": 5,
+    "dimensions": {
+      "largeur": 70,
+      "hauteur": 60
+    },
+    "machines_compatibles": [
+      "Janome",
+      "Brother",
+      "Singer",
+      "Bernina"
+    ],
+    "niveau": "Débutant",
+    "tags": [
+      "papillon",
+      "enfants",
+      "coloré",
+      "école"
+    ]
+  },
+  {
+    "id": 4,
+    "nom": "Motif Pagne Femme",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.44.jpeg",
+    "categorie": "Femme",
+    "description": "Motif géométrique inspiré des tissus africains, numérisé pour pagnes, robes et ensembles féminins. Rendu coloré et précis sur tout tissu.",
+    "prix": 3000,
+    "devise": "FCFA",
+    "vedette": true,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB",
+      "EXP",
+      "HUS"
+    ],
+    "points": 24100,
+    "couleurs": 6,
+    "dimensions": {
+      "largeur": 150,
+      "hauteur": 150
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother",
+      "Barudan",
+      "Husqvarna",
+      "Bernina"
+    ],
+    "niveau": "Avancé",
+    "tags": [
+      "femme",
+      "pagne",
+      "tissu",
+      "robe",
+      "ensemble"
+    ]
+  },
+  {
+    "id": 5,
+    "nom": "Rose Élégante",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.45.jpeg",
+    "categorie": "Femme",
+    "description": "Rose haute-couture numérisée avec remplissage satiné et points relief. Résultat exceptionnel sur soie, velours et tissus premium pour tenues féminines.",
+    "prix": 4000,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 31500,
+    "couleurs": 5,
+    "dimensions": {
+      "largeur": 130,
+      "hauteur": 140
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother",
+      "Barudan",
+      "Bernina"
+    ],
+    "niveau": "Avancé",
+    "tags": [
+      "rose",
+      "femme",
+      "soie",
+      "haute-couture",
+      "élégant"
+    ]
+  },
+  {
+    "id": 6,
+    "nom": "Monogramme Homme",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.46 (1).jpeg",
+    "categorie": "Homme",
+    "description": "Design géométrique épuré et monogramme numérisé. Idéal pour chemises, polos, blazers et accessoires masculins. Finition professionnelle rapide à broder.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "EXP"
+    ],
+    "points": 7800,
+    "couleurs": 2,
+    "dimensions": {
+      "largeur": 90,
+      "hauteur": 45
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother",
+      "Singer",
+      "Bernina"
+    ],
+    "niveau": "Débutant",
+    "tags": [
+      "homme",
+      "monogramme",
+      "polo",
+      "chemise",
+      "blazer"
+    ]
+  },
+  {
+    "id": 7,
+    "nom": "Couronne Nuptiale",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.46.jpeg",
+    "categorie": "Mariage",
+    "description": "Couronne royale numérisée pour robes de mariée, écharpes des demoiselles d'honneur et voiles. Points satinés or et blanc. Fichiers multi-formats.",
+    "prix": 3500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 22000,
+    "couleurs": 3,
+    "dimensions": {
+      "largeur": 160,
+      "hauteur": 80
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother",
+      "Barudan"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "couronne",
+      "mariage",
+      "voile",
+      "demoiselle"
+    ]
+  },
+  {
+    "id": 8,
+    "nom": "Vierge Marie",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.47.jpeg",
+    "categorie": "Religieux",
+    "description": "Motif marial numérisé avec lys et auréole dorée. Points complexes pour rendu haute fidélité. Adapté nappes d'église, mantilles et premières communions.",
+    "prix": 2800,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB",
+      "EXP"
+    ],
+    "points": 19600,
+    "couleurs": 4,
+    "dimensions": {
+      "largeur": 100,
+      "hauteur": 130
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother",
+      "Barudan",
+      "Bernina"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "vierge",
+      "religieux",
+      "communion",
+      "lys",
+      "mantille"
+    ]
+  },
+  {
+    "id": 9,
+    "nom": "Costume Homme Brodé",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.48.jpeg",
+    "categorie": "Homme",
+    "description": "Motif discret et raffiné pour vestes, costumes et chemises homme. Design géométrique sobre adapté à la broderie de bureau ou de cérémonie masculine.",
+    "prix": 2200,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES"
+    ],
+    "points": 11000,
+    "couleurs": 2,
+    "dimensions": {
+      "largeur": 85,
+      "hauteur": 85
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "homme",
+      "costume",
+      "veste",
+      "cérémonie",
+      "sobre"
+    ]
+  },
+  {
+    "id": 10,
+    "nom": "Ourson Bébé",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.49 (1).jpeg",
+    "categorie": "Enfants",
+    "description": "Adorable ourson numérisé pour bodies bébé, bavoirs et vêtements de naissance. Doux, rond, avec peu de couleurs pour une lecture claire même en petit format.",
+    "prix": 1200,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES"
+    ],
+    "points": 6500,
+    "couleurs": 3,
+    "dimensions": {
+      "largeur": 55,
+      "hauteur": 55
+    },
+    "machines_compatibles": [
+      "Janome",
+      "Brother",
+      "Singer"
+    ],
+    "niveau": "Débutant",
+    "tags": [
+      "bébé",
+      "ourson",
+      "enfants",
+      "naissance",
+      "body"
+    ]
+  },
+  {
+    "id": 11,
+    "nom": "Motif 22:40:49",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.49.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 12,
+    "nom": "Motif 22:40:50",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.50 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 13,
+    "nom": "Motif 22:40:50",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.50.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 14,
+    "nom": "Motif 22:40:51",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.51 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 15,
+    "nom": "Motif 22:40:51",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.51.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 16,
+    "nom": "Motif 22:40:52",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.52 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 17,
+    "nom": "Motif 22:40:52",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.52 (2).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 18,
+    "nom": "Motif 22:40:52",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.52.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 19,
+    "nom": "Motif 22:40:54",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.54 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 20,
+    "nom": "Motif 22:40:54",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.54.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 21,
+    "nom": "Motif 22:40:55",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.55 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 22,
+    "nom": "Motif 22:40:55",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.55.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 23,
+    "nom": "Motif 22:40:56",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.56 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 24,
+    "nom": "Motif 22:40:56",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.56.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 25,
+    "nom": "Motif 22:40:57",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.57 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 26,
+    "nom": "Motif 22:40:57",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.57.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 27,
+    "nom": "Motif 22:40:58",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.58 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 28,
+    "nom": "Motif 22:40:58",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.58.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 29,
+    "nom": "Motif 22:40:59",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.40.59.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 30,
+    "nom": "Motif 22:41:00",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.00 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 31,
+    "nom": "Motif 22:41:00",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.00.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 32,
+    "nom": "Motif 22:41:01",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.01 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 33,
+    "nom": "Motif 22:41:01",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.01 (2).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 34,
+    "nom": "Motif 22:41:01",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.01.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 35,
+    "nom": "Motif 22:41:03",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.03 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 36,
+    "nom": "Motif 22:41:03",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.03 (2).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 37,
+    "nom": "Motif 22:41:03",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.03.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 38,
+    "nom": "Motif 22:41:04",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.04.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 39,
+    "nom": "Motif 22:41:05",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.05 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 40,
+    "nom": "Motif 22:41:05",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.05.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 41,
+    "nom": "Motif 22:41:06",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.06 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 42,
+    "nom": "Motif 22:41:06",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.06.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 43,
+    "nom": "Motif 22:41:07",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.07 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 44,
+    "nom": "Motif 22:41:07",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.07.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 45,
+    "nom": "Motif 22:41:08",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.08.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 46,
+    "nom": "Motif 22:41:09",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.09 (1).jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  },
+  {
+    "id": 47,
+    "nom": "Motif 22:41:09",
+    "image": "images/WhatsApp Image 2026-04-23 at 22.41.09.jpeg",
+    "categorie": "Nouveau",
+    "description": "Nouveau motif de broderie numérique haute qualité, prêt pour votre machine.",
+    "prix": 1500,
+    "devise": "FCFA",
+    "vedette": false,
+    "formats": [
+      "DST",
+      "JEF",
+      "PES",
+      "DSB"
+    ],
+    "points": 0,
+    "couleurs": 0,
+    "dimensions": {
+      "largeur": 0,
+      "hauteur": 0
+    },
+    "machines_compatibles": [
+      "Tajima",
+      "Janome",
+      "Brother"
+    ],
+    "niveau": "Standard",
+    "tags": [
+      "nouveau",
+      "broderie"
+    ]
+  }
+]
