@@ -354,7 +354,7 @@
   <a href="index.html" class="nav-brand">
     <div class="nav-brand-icon">🪡</div>
     <div class="nav-brand-text">
-      <span class="nav-brand-name">Motif <em>237</em></span>
+      <span class="nav-brand-name">Broderie <em>Numérique</em></span>
       <span class="nav-brand-sub">Broderie Numérique</span>
     </div>
   </a>
@@ -477,7 +477,7 @@
 <footer>
   <div class="footer-grid">
     <div>
-      <div class="footer-brand-name">Motif <em>237</em></div>
+      <div class="footer-brand-name">Broderie <em>Numérique</em></div>
       <p class="footer-brand-desc">Fichiers de broderie numérique testés sur machine. Compatibles avec toutes les grandes marques. Basé à Yaoundé, Cameroun.</p>
       <div class="footer-fmts">
         <span class="footer-fmt">.DST</span>
@@ -650,13 +650,7 @@
     const prixTxt = m.prix ? ` (${m.prix.toLocaleString('fr')} FCFA)` : '';
     const msg = `Bonjour Broderie Numérique ! \ud83d\udc4b\nJe veux commander le motif : *${m.nom}*${prixTxt}.\n\nQuelle marque de machine avez-vous ? (Brother, Janome, Tajima\u2026)\n\u2192 Pr\u00e9cisez-moi votre machine et je vous envoie le bon fichier + les d\u00e9tails de paiement.`;
     const waLink = `https://wa.me/237693565223?text=${encodeURIComponent(msg)}`;
-    const fmts = (m.formats || []).slice(0,4).map(f => `<span class="fmt fmt-${f}">.${f}</span>`).join('');
     const nCls = {'D\u00e9butant':'badge-debutant','Standard':'badge-standard','Avanc\u00e9':'badge-avance'}[m.niveau] || '';
-    const specs = [
-      m.points   ? `\ud83e\uddf5 ${m.points.toLocaleString('fr')} pts` : '',
-      m.couleurs ? `\ud83c\udfa8 ${m.couleurs} fils` : '',
-      m.dimensions && m.dimensions.largeur ? `\ud83d\udcd0 ${m.dimensions.largeur}\u00d7${m.dimensions.hauteur}mm` : '',
-    ].filter(Boolean).map(s => `<span>${s}</span>`).join('');
     return `
       <div class="product-card" onclick="window.location.href='motif.html?id=${m.id}'" aria-label="${m.nom}">
         <div class="card-img">
@@ -667,8 +661,6 @@
         <div class="card-body">
           <div class="card-cat">${m.categorie}</div>
           <div class="card-name">${m.nom}</div>
-          <div class="card-specs">${specs}</div>
-          <div class="card-fmts">${fmts}</div>
           <div class="card-bottom">
             <div class="card-price">${m.prix ? `${m.prix.toLocaleString('fr')} <small>FCFA</small>` : ''}</div>
             <div class="card-btns">

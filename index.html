@@ -243,7 +243,7 @@
   <a href="index.html" class="logo">
     <div class="logo-icon">🪡</div>
     <div>
-      <div class="logo-name">Motif <em>237</em></div>
+      <div class="logo-name">Broderie <em>Numérique</em></div>
       <div class="logo-sub">Broderie Numérique</div>
     </div>
   </a>
@@ -308,13 +308,6 @@
 
   function card(m) {
     const link = waLink(m.nom, m.prix);
-    const fmts = (m.formats || []).slice(0, 4).map(f => `<span class="fmt fmt-${f}">.${f}</span>`).join('');
-    const specs = [
-      m.points   ? `🧵 ${m.points.toLocaleString('fr')} pts` : '',
-      m.couleurs ? `🎨 ${m.couleurs} fils` : '',
-      m.dimensions && m.dimensions.largeur ? `📐 ${m.dimensions.largeur}×${m.dimensions.hauteur}mm` : '',
-    ].filter(Boolean).map(s => `<span class="spec">${s}</span>`).join('');
-
     return `
       <div class="card">
         <div class="card-img">
@@ -329,8 +322,6 @@
         <div class="card-body">
           <div class="card-cat">${m.categorie}</div>
           <div class="card-name">${m.nom}</div>
-          ${specs ? `<div class="card-specs">${specs}</div>` : ''}
-          ${fmts ? `<div class="card-fmts">${fmts}</div>` : ''}
           <div class="card-bottom">
             <div class="card-price">${m.prix ? `${m.prix.toLocaleString('fr')} <small>FCFA</small>` : ''}</div>
             <a href="${link}" target="_blank" rel="noopener" class="card-action" onclick="event.stopPropagation()" aria-label="Commander">
