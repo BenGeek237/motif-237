@@ -62,8 +62,19 @@ const DataService = {
 
   async getCategories() {
     const all = await this.fetchAll();
-    const cats = [...new Set(all.map((m) => m.categorie))];
-    return ["Tous", ...cats];
+    const customOrder = ['Homme', 'Femme', 'Gandoura', 'Enfant', 'Logo', 'Autres'];
+    const existingCats = [...new Set(all.map(m => m.categorie).filter(Boolean))];
+    
+    // Trier selon l'ordre personnalisé, puis alphabétique pour d'éventuelles autres catégories
+    existingCats.sort((a, b) => {
+      let idxA = customOrder.indexOf(a);
+      let idxB = customOrder.indexOf(b);
+      if (idxA === -1) idxA = 999;
+      if (idxB === -1) idxB = 999;
+      return idxA - idxB || a.localeCompare(b);
+    });
+
+    return ["Tous", ...existingCats];
   },
 };
 

@@ -371,7 +371,15 @@
   }
 
   function buildCats() {
-    const cats = ['Tous', ...new Set(all.map(m => m.categorie))];
+    const customOrder = ['Homme', 'Femme', 'Gandoura', 'Enfant', 'Logo', 'Autres'];
+    const existingCats = [...new Set(all.map(m => m.categorie).filter(Boolean))];
+    existingCats.sort((a, b) => {
+      let idxA = customOrder.indexOf(a), idxB = customOrder.indexOf(b);
+      if (idxA === -1) idxA = 999;
+      if (idxB === -1) idxB = 999;
+      return idxA - idxB || a.localeCompare(b);
+    });
+    const cats = ['Tous', ...existingCats];
     document.getElementById('cats').innerHTML = cats.map(c =>
       `<button class="chip${c === cat ? ' active' : ''}" onclick="setCat('${c}')">${c}</button>`
     ).join('');
