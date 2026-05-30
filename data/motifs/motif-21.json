@@ -1,0 +1,32 @@
+{
+  "id": 21,
+  "nom": "Broderie Moderne #21",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.55 (1).jpeg",
+  "categorie": "Homme",
+  "description": "Un magnifique broderie moderne #21 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 14043,
+  "couleurs": 9,
+  "dimensions": {
+    "largeur": 120,
+    "hauteur": 162
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

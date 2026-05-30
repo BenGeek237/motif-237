@@ -1,0 +1,32 @@
+{
+  "id": 30,
+  "nom": "Motif Géométrique #30",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.00 (1).jpeg",
+  "categorie": "Homme",
+  "description": "Un magnifique motif géométrique #30 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 35969,
+  "couleurs": 9,
+  "dimensions": {
+    "largeur": 154,
+    "hauteur": 103
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

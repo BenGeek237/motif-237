@@ -1,0 +1,32 @@
+{
+  "id": 33,
+  "nom": "Design Géométrique #33",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.01 (2).jpeg",
+  "categorie": "Mariage",
+  "description": "Un magnifique design géométrique #33 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 36155,
+  "couleurs": 3,
+  "dimensions": {
+    "largeur": 136,
+    "hauteur": 121
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

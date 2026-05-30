@@ -1,0 +1,32 @@
+{
+  "id": 40,
+  "nom": "Création Africain #40",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.05.jpeg",
+  "categorie": "Traditionnel",
+  "description": "Un magnifique création africain #40 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 38229,
+  "couleurs": 5,
+  "dimensions": {
+    "largeur": 74,
+    "hauteur": 131
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

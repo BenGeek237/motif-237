@@ -1,0 +1,40 @@
+{
+  "id": 4,
+  "nom": "Motif Pagne Femme",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.44.jpeg",
+  "categorie": "Femme",
+  "description": "Motif géométrique inspiré des tissus africains, numérisé pour pagnes, robes et ensembles féminins. Rendu coloré et précis sur tout tissu.",
+  "prix": 3000,
+  "devise": "FCFA",
+  "vedette": true,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB",
+    "EXP",
+    "HUS"
+  ],
+  "points": 24100,
+  "couleurs": 6,
+  "dimensions": {
+    "largeur": 150,
+    "hauteur": 150
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother",
+    "Barudan",
+    "Husqvarna",
+    "Bernina"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "femme",
+    "pagne",
+    "tissu",
+    "robe",
+    "ensemble"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 18,
+  "nom": "Broderie Chic #18",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.52.jpeg",
+  "categorie": "Mariage",
+  "description": "Un magnifique broderie chic #18 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 42701,
+  "couleurs": 6,
+  "dimensions": {
+    "largeur": 85,
+    "hauteur": 169
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Débutant",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

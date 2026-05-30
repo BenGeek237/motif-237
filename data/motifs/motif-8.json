@@ -1,0 +1,38 @@
+{
+  "id": 8,
+  "nom": "Vierge Marie",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.47.jpeg",
+  "categorie": "Religieux",
+  "description": "Motif marial numérisé avec lys et auréole dorée. Points complexes pour rendu haute fidélité. Adapté nappes d'église, mantilles et premières communions.",
+  "prix": 2800,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB",
+    "EXP"
+  ],
+  "points": 19600,
+  "couleurs": 4,
+  "dimensions": {
+    "largeur": 100,
+    "hauteur": 130
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother",
+    "Barudan",
+    "Bernina"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "vierge",
+    "religieux",
+    "communion",
+    "lys",
+    "mantille"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 32,
+  "nom": "Création Chic #32",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.01 (1).jpeg",
+  "categorie": "Homme",
+  "description": "Un magnifique création chic #32 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 37283,
+  "couleurs": 2,
+  "dimensions": {
+    "largeur": 101,
+    "hauteur": 180
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

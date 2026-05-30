@@ -1,0 +1,32 @@
+{
+  "id": 19,
+  "nom": "Broderie Chic #19",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.54 (1).jpeg",
+  "categorie": "Logos",
+  "description": "Un magnifique broderie chic #19 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 12907,
+  "couleurs": 3,
+  "dimensions": {
+    "largeur": 187,
+    "hauteur": 150
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

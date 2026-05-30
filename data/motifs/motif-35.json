@@ -1,0 +1,32 @@
+{
+  "id": 35,
+  "nom": "Broderie Floral #35",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.03 (1).jpeg",
+  "categorie": "Logos",
+  "description": "Un magnifique broderie floral #35 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 17270,
+  "couleurs": 9,
+  "dimensions": {
+    "largeur": 169,
+    "hauteur": 95
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

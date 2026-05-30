@@ -1,0 +1,35 @@
+{
+  "id": 7,
+  "nom": "Couronne Nuptiale",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.46.jpeg",
+  "categorie": "Mariage",
+  "description": "Couronne royale numérisée pour robes de mariée, écharpes des demoiselles d'honneur et voiles. Points satinés or et blanc. Fichiers multi-formats.",
+  "prix": 3500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 22000,
+  "couleurs": 3,
+  "dimensions": {
+    "largeur": 160,
+    "hauteur": 80
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother",
+    "Barudan"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "couronne",
+    "mariage",
+    "voile",
+    "demoiselle"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 27,
+  "nom": "Style Floral #27",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.58 (1).jpeg",
+  "categorie": "Femme",
+  "description": "Un magnifique style floral #27 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 18468,
+  "couleurs": 8,
+  "dimensions": {
+    "largeur": 164,
+    "hauteur": 61
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

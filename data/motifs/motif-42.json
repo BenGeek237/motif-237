@@ -1,0 +1,32 @@
+{
+  "id": 42,
+  "nom": "Design Moderne #42",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.06.jpeg",
+  "categorie": "Femme",
+  "description": "Un magnifique design moderne #42 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 32513,
+  "couleurs": 5,
+  "dimensions": {
+    "largeur": 88,
+    "hauteur": 180
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

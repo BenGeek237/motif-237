@@ -1,0 +1,32 @@
+{
+  "id": 22,
+  "nom": "Broderie Premium #22",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.55.jpeg",
+  "categorie": "Religieux",
+  "description": "Un magnifique broderie premium #22 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 43528,
+  "couleurs": 6,
+  "dimensions": {
+    "largeur": 196,
+    "hauteur": 187
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

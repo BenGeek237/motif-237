@@ -1,0 +1,32 @@
+{
+  "id": 14,
+  "nom": "Création Africain #14",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.51 (1).jpeg",
+  "categorie": "Religieux",
+  "description": "Un magnifique création africain #14 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 16886,
+  "couleurs": 6,
+  "dimensions": {
+    "largeur": 193,
+    "hauteur": 72
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Débutant",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

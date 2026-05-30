@@ -1,0 +1,32 @@
+{
+  "id": 34,
+  "nom": "Design Royal #34",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.01.jpeg",
+  "categorie": "Mariage",
+  "description": "Un magnifique design royal #34 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 23198,
+  "couleurs": 8,
+  "dimensions": {
+    "largeur": 190,
+    "hauteur": 136
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

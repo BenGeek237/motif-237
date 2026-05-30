@@ -1,0 +1,38 @@
+{
+  "id": 2,
+  "nom": "Croix Bénie",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.41.jpeg",
+  "categorie": "Religieux",
+  "description": "Croix dorée et colombe numérisée pour vêtements liturgiques, nappes d'autel, étoles et tenues de communion. Finition satinée professionnelle.",
+  "prix": 2000,
+  "devise": "FCFA",
+  "vedette": true,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB",
+    "EXP"
+  ],
+  "points": 12800,
+  "couleurs": 3,
+  "dimensions": {
+    "largeur": 80,
+    "hauteur": 100
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother",
+    "Barudan",
+    "Bernina",
+    "Singer"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "croix",
+    "religieux",
+    "église",
+    "communion"
+  ]
+}

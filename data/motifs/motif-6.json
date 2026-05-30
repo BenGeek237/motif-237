@@ -1,0 +1,37 @@
+{
+  "id": 6,
+  "nom": "Monogramme Homme",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.46 (1).jpeg",
+  "categorie": "Homme",
+  "description": "Design géométrique épuré et monogramme numérisé. Idéal pour chemises, polos, blazers et accessoires masculins. Finition professionnelle rapide à broder.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "EXP"
+  ],
+  "points": 7800,
+  "couleurs": 2,
+  "dimensions": {
+    "largeur": 90,
+    "hauteur": 45
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother",
+    "Singer",
+    "Bernina"
+  ],
+  "niveau": "Débutant",
+  "tags": [
+    "homme",
+    "monogramme",
+    "polo",
+    "chemise",
+    "blazer"
+  ]
+}

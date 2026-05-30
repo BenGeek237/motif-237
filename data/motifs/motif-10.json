@@ -1,0 +1,34 @@
+{
+  "id": 10,
+  "nom": "Ourson Bébé",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.49 (1).jpeg",
+  "categorie": "Enfants",
+  "description": "Adorable ourson numérisé pour bodies bébé, bavoirs et vêtements de naissance. Doux, rond, avec peu de couleurs pour une lecture claire même en petit format.",
+  "prix": 1200,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES"
+  ],
+  "points": 6500,
+  "couleurs": 3,
+  "dimensions": {
+    "largeur": 55,
+    "hauteur": 55
+  },
+  "machines_compatibles": [
+    "Janome",
+    "Brother",
+    "Singer"
+  ],
+  "niveau": "Débutant",
+  "tags": [
+    "bébé",
+    "ourson",
+    "enfants",
+    "naissance",
+    "body"
+  ]
+}

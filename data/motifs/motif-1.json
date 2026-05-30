@@ -1,0 +1,36 @@
+{
+  "id": 1,
+  "nom": "Fleur Royale Mariage",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.39.jpeg",
+  "categorie": "Mariage",
+  "description": "Motif floral élégant pour robes de mariée et tenues cérémonielles. Numérisé avec précision pour un rendu parfait sur tissu satin ou organza.",
+  "prix": 2500,
+  "devise": "FCFA",
+  "vedette": true,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 18450,
+  "couleurs": 4,
+  "dimensions": {
+    "largeur": 120,
+    "hauteur": 95
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother",
+    "Barudan",
+    "Bernina"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "floral",
+    "mariage",
+    "fleur",
+    "satin"
+  ]
+}

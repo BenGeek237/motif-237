@@ -1,0 +1,32 @@
+{
+  "id": 43,
+  "nom": "Création Classique #43",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.07 (1).jpeg",
+  "categorie": "Logos",
+  "description": "Un magnifique création classique #43 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 43622,
+  "couleurs": 3,
+  "dimensions": {
+    "largeur": 121,
+    "hauteur": 81
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

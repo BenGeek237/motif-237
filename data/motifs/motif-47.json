@@ -1,0 +1,32 @@
+{
+  "id": 47,
+  "nom": "Création Africain #47",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.09.jpeg",
+  "categorie": "Mariage",
+  "description": "Un magnifique création africain #47 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 8617,
+  "couleurs": 10,
+  "dimensions": {
+    "largeur": 59,
+    "hauteur": 63
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Débutant",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

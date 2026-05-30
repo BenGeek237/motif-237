@@ -1,39 +1,40 @@
 backend:
   name: git-gateway
-  branch: main # Branche à modifier (habituellement main ou master)
+  branch: main # Branche à modifier
 
 media_folder: "images"
 public_folder: "images"
 
 collections:
-  - name: "catalogue"
-    label: "Catalogue des Motifs"
-    files:
-      - file: "data/motifs.json"
-        label: "Tous les motifs"
-        name: "motifs"
-        extension: "json"
-        format: "json"
-        widget: "list"
+  - name: "motifs"
+    label: "Tous les motifs"
+    label_singular: "Motif"
+    folder: "data/motifs"
+    create: true
+    slug: "motif-{{id}}"
+    extension: "json"
+    format: "json"
+    editor:
+      preview: false
+    fields:
+      - { label: "ID (Numéro unique)", name: "id", widget: "number", value_type: "int" }
+      - { label: "Nom du motif", name: "nom", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Catégorie", name: "categorie", widget: "select", options: ["Homme", "Femme", "Enfants", "Religieux", "Mariage", "Traditionnel", "Logos", "Autres"] }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Prix (FCFA)", name: "prix", widget: "number", value_type: "int", required: false }
+      - { label: "Devise", name: "devise", widget: "hidden", default: "FCFA" }
+      - { label: "Vedette", name: "vedette", widget: "boolean", default: false, required: false }
+      - { label: "Formats", name: "formats", widget: "select", multiple: true, options: ["DST", "JEF", "PES", "DSB", "EXP", "HUS", "VP3"], required: false }
+      - { label: "Points", name: "points", widget: "number", value_type: "int", required: false }
+      - { label: "Couleurs", name: "couleurs", widget: "number", value_type: "int", required: false }
+      - label: "Dimensions"
+        name: "dimensions"
+        widget: "object"
+        required: false
         fields:
-          - { label: "ID", name: "id", widget: "number", value_type: "int" }
-          - { label: "Nom du motif", name: "nom", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Catégorie", name: "categorie", widget: "select", options: ["Homme", "Femme", "Enfants", "Religieux", "Mariage", "Traditionnel", "Logos", "Autres"] }
-          - { label: "Description", name: "description", widget: "text", required: false }
-          - { label: "Prix (FCFA)", name: "prix", widget: "number", value_type: "int", required: false }
-          - { label: "Devise", name: "devise", widget: "hidden", default: "FCFA" }
-          - { label: "Vedette", name: "vedette", widget: "boolean", default: false, required: false }
-          - { label: "Formats", name: "formats", widget: "select", multiple: true, options: ["DST", "JEF", "PES", "DSB", "EXP", "HUS", "VP3"], required: false }
-          - { label: "Points", name: "points", widget: "number", value_type: "int", required: false }
-          - { label: "Couleurs", name: "couleurs", widget: "number", value_type: "int", required: false }
-          - label: "Dimensions"
-            name: "dimensions"
-            widget: "object"
-            required: false
-            fields:
-              - { label: "Largeur (mm)", name: "largeur", widget: "number", value_type: "int", required: false }
-              - { label: "Hauteur (mm)", name: "hauteur", widget: "number", value_type: "int", required: false }
-          - { label: "Machines Compatibles", name: "machines_compatibles", widget: "select", multiple: true, options: ["Tajima", "Janome", "Brother", "Barudan", "Bernina", "Singer", "Husqvarna", "Pfaff"], required: false }
-          - { label: "Niveau", name: "niveau", widget: "select", options: ["Débutant", "Standard", "Avancé"], required: false }
-          - { label: "Mots-clés (Tags)", name: "tags", widget: "list", required: false }
+          - { label: "Largeur (mm)", name: "largeur", widget: "number", value_type: "int", required: false }
+          - { label: "Hauteur (mm)", name: "hauteur", widget: "number", value_type: "int", required: false }
+      - { label: "Machines Compatibles", name: "machines_compatibles", widget: "select", multiple: true, options: ["Tajima", "Janome", "Brother", "Barudan", "Bernina", "Singer", "Husqvarna", "Pfaff"], required: false }
+      - { label: "Niveau", name: "niveau", widget: "select", options: ["Débutant", "Standard", "Avancé"], required: false }
+      - { label: "Mots-clés (Tags)", name: "tags", widget: "list", required: false }

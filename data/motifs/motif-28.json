@@ -1,0 +1,32 @@
+{
+  "id": 28,
+  "nom": "Style Moderne #28",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.58.jpeg",
+  "categorie": "Homme",
+  "description": "Un magnifique style moderne #28 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 41577,
+  "couleurs": 7,
+  "dimensions": {
+    "largeur": 127,
+    "hauteur": 74
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 12,
+  "nom": "Motif Africain #12",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.50 (1).jpeg",
+  "categorie": "Femme",
+  "description": "Un magnifique motif africain #12 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 33446,
+  "couleurs": 10,
+  "dimensions": {
+    "largeur": 126,
+    "hauteur": 83
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Débutant",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

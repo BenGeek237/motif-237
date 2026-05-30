@@ -1,0 +1,34 @@
+{
+  "id": 9,
+  "nom": "Costume Homme Brodé",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.48.jpeg",
+  "categorie": "Homme",
+  "description": "Motif discret et raffiné pour vestes, costumes et chemises homme. Design géométrique sobre adapté à la broderie de bureau ou de cérémonie masculine.",
+  "prix": 2200,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES"
+  ],
+  "points": 11000,
+  "couleurs": 2,
+  "dimensions": {
+    "largeur": 85,
+    "hauteur": 85
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "homme",
+    "costume",
+    "veste",
+    "cérémonie",
+    "sobre"
+  ]
+}

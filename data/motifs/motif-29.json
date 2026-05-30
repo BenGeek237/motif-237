@@ -1,0 +1,32 @@
+{
+  "id": 29,
+  "nom": "Style Royal #29",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.59.jpeg",
+  "categorie": "Homme",
+  "description": "Un magnifique style royal #29 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 20129,
+  "couleurs": 3,
+  "dimensions": {
+    "largeur": 110,
+    "hauteur": 76
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

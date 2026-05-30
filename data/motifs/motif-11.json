@@ -1,0 +1,32 @@
+{
+  "id": 11,
+  "nom": "Motif Moderne #11",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.49.jpeg",
+  "categorie": "Traditionnel",
+  "description": "Un magnifique motif moderne #11 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 27248,
+  "couleurs": 6,
+  "dimensions": {
+    "largeur": 50,
+    "hauteur": 179
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Standard",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

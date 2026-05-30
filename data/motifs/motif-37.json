@@ -1,0 +1,32 @@
+{
+  "id": 37,
+  "nom": "Design Premium #37",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.41.03.jpeg",
+  "categorie": "Femme",
+  "description": "Un magnifique design premium #37 numérisé avec soin pour un rendu exceptionnel. Idéal pour vos projets créatifs.",
+  "prix": 1500,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 39299,
+  "couleurs": 8,
+  "dimensions": {
+    "largeur": 153,
+    "hauteur": 87
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother"
+  ],
+  "niveau": "Débutant",
+  "tags": [
+    "nouveau",
+    "broderie"
+  ]
+}

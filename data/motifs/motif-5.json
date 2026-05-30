@@ -1,0 +1,37 @@
+{
+  "id": 5,
+  "nom": "Rose Élégante",
+  "image": "images/WhatsApp Image 2026-04-23 at 22.40.45.jpeg",
+  "categorie": "Femme",
+  "description": "Rose haute-couture numérisée avec remplissage satiné et points relief. Résultat exceptionnel sur soie, velours et tissus premium pour tenues féminines.",
+  "prix": 4000,
+  "devise": "FCFA",
+  "vedette": false,
+  "formats": [
+    "DST",
+    "JEF",
+    "PES",
+    "DSB"
+  ],
+  "points": 31500,
+  "couleurs": 5,
+  "dimensions": {
+    "largeur": 130,
+    "hauteur": 140
+  },
+  "machines_compatibles": [
+    "Tajima",
+    "Janome",
+    "Brother",
+    "Barudan",
+    "Bernina"
+  ],
+  "niveau": "Avancé",
+  "tags": [
+    "rose",
+    "femme",
+    "soie",
+    "haute-couture",
+    "élégant"
+  ]
+}
