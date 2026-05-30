@@ -20,7 +20,7 @@ collections:
       - { label: "ID (Numéro unique)", name: "id", widget: "number", value_type: "int" }
       - { label: "Nom du motif", name: "nom", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Catégorie", name: "categorie", widget: "select", options: ["Homme", "Femme", "Enfants", "Religieux", "Mariage", "Traditionnel", "Logos", "Autres"] }
+      - { label: "Catégorie", name: "categorie", widget: "select", options: ["Homme", "Femme", "Gandoura", "Enfant", "Logo", "Autres"] }
       - { label: "Description", name: "description", widget: "text", required: false }
       - { label: "Prix (FCFA)", name: "prix", widget: "number", value_type: "int", required: false }
       - { label: "Devise", name: "devise", widget: "hidden", default: "FCFA" }
