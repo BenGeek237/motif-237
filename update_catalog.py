@@ -25,7 +25,7 @@ DEFAULT_VALUES = {
 }
 
 def update_catalog():
-    print("--- Demarrage de la mise a jour du catalogue Motif 237 ---")
+    print("--- Demarrage de la mise a jour du catalogue Broderie Numérique ---")
 
     # 1. Charger le JSON existant
     if not os.path.exists(JSON_PATH):

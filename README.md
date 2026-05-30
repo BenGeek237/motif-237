@@ -1,11 +1,11 @@
-# Motif 237 — Site Broderie Cameroun
+# Broderie Numérique — Site Broderie Cameroun
 
 Site vitrine moderne pour un business de vente de motifs de broderie basé à Yaoundé, Cameroun.
 
 ## 🗂️ Structure du projet
 
 ```
-Motif 237/
+Broderie Numérique/
 ├── index.html          # Page d'accueil
 ├── catalogue.html      # Catalogue avec filtres
 ├── motif.html          # Détail d'un motif
@@ -23,7 +23,7 @@ Motif 237/
 ### Option 1 — Glisser-déposer (le plus simple)
 1. Aller sur [netlify.com](https://netlify.com)
 2. Se connecter / créer un compte gratuit
-3. Glisser le dossier `Motif 237` dans la zone de dépôt
+3. Glisser le dossier `Broderie Numérique` dans la zone de dépôt
 4. ✅ Le site est en ligne !
 
 ### Option 2 — Via GitHub

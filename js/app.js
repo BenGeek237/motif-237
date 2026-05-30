@@ -1,5 +1,5 @@
 /**
- * Motif 237 - Module JavaScript Principal
+ * Broderie Numérique - Module JavaScript Principal
  * Broderie Numérique — Fichiers DST, JEF, PES, DSB...
  * Architecture modulaire : prête pour migration vers API Django / Vue.js
  */
@@ -9,7 +9,7 @@
 // ================================
 const CONFIG = {
   whatsappNumber: "237693565223", // Numéro de Mamoudou bia
-  businessName: "Motif 237",
+  businessName: "Broderie Numérique",
   owner: "Mamoudou bia",
   location: "Yaoundé, Cameroun",
   dataPath: "data/motifs.json",
@@ -75,12 +75,12 @@ const WhatsAppService = {
   // On lui demande juste sa marque de machine, le vendeur envoie le bon fichier
   buildLink(motifNom, prix = null) {
     const prixTxt = prix ? ` (${prix.toLocaleString('fr')} FCFA)` : '';
-    const msg = `Bonjour Motif 237 ! 👋\nJe veux commander le motif : *${motifNom}*${prixTxt}.\n\nQuelle marque de machine avez-vous ? (Brother, Janome, Tajima…)\n→ Précisez-moi votre machine et je vous envoie le bon fichier + les détails de paiement.`;
+    const msg = `Bonjour Broderie Numérique ! 👋\nJe veux commander le motif : *${motifNom}*${prixTxt}.\n\nQuelle marque de machine avez-vous ? (Brother, Janome, Tajima…)\n→ Précisez-moi votre machine et je vous envoie le bon fichier + les détails de paiement.`;
     return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
   },
 
   buildGeneralLink() {
-    const msg = "Bonjour Motif 237 ! 👋\nJe voudrais voir vos motifs de broderie numérique. Pouvez-vous me montrer votre catalogue ?";
+    const msg = "Bonjour Broderie Numérique ! 👋\nJe voudrais voir vos motifs de broderie numérique. Pouvez-vous me montrer votre catalogue ?";
     return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
   },
 
@@ -221,4 +221,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Export global
-window.Motif237 = { CONFIG, DataService, WhatsAppService, UI };
+window.BroderieNumerique = { CONFIG, DataService, WhatsAppService, UI };

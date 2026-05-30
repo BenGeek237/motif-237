@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Fichier Broderie — Motif 237</title>
-  <meta name="description" id="page-desc" content="Fichier de broderie numérique — Motif 237">
+  <title id="page-title">Fichier Broderie — Broderie Numérique</title>
+  <meta name="description" id="page-desc" content="Fichier de broderie numérique — Broderie Numérique">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪡</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -236,7 +236,7 @@
 
   <!-- FOOTER -->
   <footer class="bg-white border-t border-gray-200 py-8 px-4 text-center text-xs text-gray-400 mt-0">
-    <p>© 2024 <span class="font-bold text-gray-700">Motif 237</span> — Broderie Numérique · Yaoundé, Cameroun 🇨🇲</p>
+    <p>© 2024 <span class="font-bold text-gray-700">Broderie Numérique</span> — Broderie Numérique · Yaoundé, Cameroun 🇨🇲</p>
   </footer>
 
   <!-- WA Float -->
@@ -248,7 +248,7 @@
 
   <script src="js/app.js"></script>
   <script>
-    const { DataService, WhatsAppService } = window.Motif237;
+    const { DataService, WhatsAppService } = window.BroderieNumerique;
     let curMotif = null, selFmt = '';
 
     const fmtColors = { DST:'#92400e,#fef3c7', JEF:'#1e40af,#dbeafe', PES:'#166534,#dcfce7', DSB:'#991b1b,#fee2e2', EXP:'#6b21a8,#f3e8ff', HUS:'#9d174d,#fce7f3' };
@@ -268,7 +268,7 @@
       document.getElementById('motif-detail').classList.remove('hidden');
 
       // Meta
-      document.title = `${m.nom} (${m.formats?.join(', ')}) — Motif 237`;
+      document.title = `${m.nom} (${m.formats?.join(', ')}) — Broderie Numérique`;
       document.getElementById('page-desc').setAttribute('content', m.description);
 
       // Breadcrumb
