@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement Réussi — Broderie Numérique</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #C9A84C; --gold-dark: #A07830; }
+    * { font-family: 'Inter', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
+  <div class="bg-white p-8 rounded-2xl shadow-lg max-w-md w-full text-center border border-gray-100">
+    <div id="loading" class="space-y-4">
+      <div class="w-16 h-16 mx-auto animate-spin rounded-full border-4 border-gray-200 border-t-amber-500"></div>
+      <h2 class="text-xl font-bold text-gray-900 mt-4">Vérification de votre paiement...</h2>
+      <p class="text-sm text-gray-500">Veuillez patienter pendant que nous préparons votre fichier de broderie.</p>
+    </div>
+
+    <div id="success" class="hidden space-y-4">
+      <div class="w-16 h-16 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto text-3xl">✓</div>
+      <h2 class="text-2xl font-bold text-gray-900 mt-4 font-playfair">Paiement Validé !</h2>
+      <p class="text-sm text-gray-600">Merci pour votre achat. Le téléchargement de votre fichier a commencé automatiquement.</p>
+      
+      <div class="mt-6 pt-6 border-t border-gray-100">
+        <p class="text-xs text-gray-500 mb-2">Si le téléchargement ne se lance pas :</p>
+        <a id="manual-download-btn" href="#" class="inline-block w-full bg-gray-900 text-white font-bold py-3 rounded-lg hover:bg-gray-800 transition-colors">
+          Télécharger Manuellement
+        </a>
+      </div>
+    </div>
+
+    <div id="error" class="hidden space-y-4">
+      <div class="w-16 h-16 bg-red-100 text-red-500 rounded-full flex items-center justify-center mx-auto text-3xl">!</div>
+      <h2 class="text-xl font-bold text-gray-900 mt-4 font-playfair">Problème de validation</h2>
+      <p id="error-msg" class="text-sm text-gray-600">Nous n'avons pas pu valider votre paiement.</p>
+      
+      <div class="mt-6 pt-6 border-t border-gray-100">
+        <p class="text-xs text-gray-500 mb-3">Si vous avez été débité, contactez-nous sur WhatsApp avec cette référence :</p>
+        <code id="ref-display" class="block bg-gray-100 p-2 rounded text-xs font-mono mb-4 font-bold"></code>
+        <a id="wa-support" href="https://wa.me/237693565223" target="_blank" class="inline-flex items-center justify-center gap-2 w-full bg-green-500 text-white font-bold py-3 rounded-lg hover:bg-green-600 transition-colors">
+          Contacter le Support WhatsApp
+        </a>
+      </div>
+    </div>
+    
+    <div class="mt-8 text-center">
+      <a href="index.html" class="text-sm text-amber-600 hover:underline font-semibold">← Retour à l'accueil</a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const ref = urlParams.get('ref');
+      const motifId = urlParams.get('motif');
+      const fmt = urlParams.get('fmt');
+
+      if (!ref || !motifId || !fmt) {
+        showError("Paramètres de paiement manquants dans l'URL.");
+        return;
+      }
+
+      document.getElementById('ref-display').textContent = ref;
+
+      // Set manual link
+      const downloadUrl = `/.netlify/functions/download-file?ref=${ref}&motif=${motifId}&fmt=${fmt}`;
+      document.getElementById('manual-download-btn').href = downloadUrl;
+
+      // Attempt direct download by calling the URL
+      // Since it's a file download, we can't just fetch it easily and save (unless we use blobs), 
+      // the easiest way is to redirect the window to the download URL.
+      // But we want to check status first if possible, or we let the backend handle it.
+      
+      // Let's check status via fetch first, if 200, we trigger the download.
+      try {
+        const response = await fetch(downloadUrl);
+        if (response.ok) {
+           showSuccess();
+           // Trigger download
+           window.location.href = downloadUrl;
+        } else {
+           const errorText = await response.text();
+           showError(errorText);
+        }
+      } catch (e) {
+        showError("Impossible de contacter le serveur de validation.");
+      }
+    });
+
+    function showSuccess() {
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('success').classList.remove('hidden');
+    }
+
+    function showError(msg) {
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('error-msg').textContent = msg;
+      document.getElementById('error').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

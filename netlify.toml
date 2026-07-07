@@ -2,6 +2,9 @@
   command = "python build.py"
   publish = "."
 
+[functions]
+  included_files = ["secure_files/**"]
+
 [[headers]]
   for = "/*"
   [headers.values]
