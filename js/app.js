@@ -12,7 +12,7 @@ const CONFIG = {
   businessName: "Broderie Numérique",
   owner: "Mamoudou bia",
   location: "Yaoundé, Cameroun",
-  dataPath: "/data/motifs.json",
+  dataPath: "/data/motifs.json?v=" + new Date().getTime(),
   // Formats pris en charge (référence)
   formatsInfo: {
     DST: { machine: "Tajima", description: "Format universel le plus répandu" },
