@@ -39,12 +39,13 @@ exports.handler = async (event, context) => {
       amount: amount,
       currency: "XAF",
       description: description,
-      reference: reference,
+      merchant_invoice_id: reference,
+      merchant_return_url: returnUrl,
+      merchant_callback_url: `${host}/.netlify/functions/webhook`,
       customer: {
         email: email || "client@broderienumerique.com",
         phone: phone
-      },
-      return_url: returnUrl
+      }
     };
 
     // Utilisation des variables d'environnement (à définir dans Netlify)
