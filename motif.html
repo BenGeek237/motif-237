@@ -433,7 +433,7 @@
         if (response.ok && data.payment_url) {
           window.location.href = data.payment_url;
         } else {
-          alert('Erreur: ' + (data.error || 'Impossible d\\'initialiser le paiement'));
+          alert("Erreur: " + (data.error || "Impossible d'initialiser le paiement"));
           btn.disabled = false;
           btn.innerHTML = `Continuer vers le paiement →`;
         }
