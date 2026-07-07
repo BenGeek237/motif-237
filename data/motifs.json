@@ -1,13 +1,5 @@
 [
   {
-    "devise": "FCFA",
-    "vedette": false,
-    "nom": "1",
-    "image": "images/whatsapp-image-2026-05-26-at-08.26.26.jpeg",
-    "categorie": "Femme",
-    "id": 1
-  },
-  {
     "id": 1,
     "nom": "Fleur Royale Mariage",
     "image": "images/WhatsApp Image 2026-04-23 at 22.40.39.jpeg",
