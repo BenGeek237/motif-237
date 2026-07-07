@@ -413,12 +413,10 @@
   }
 
   function renderCard(m) {
-    const prixTxt = m.prix ? ` (${m.prix.toLocaleString('fr')} FCFA)` : '';
-    const msg = `Bonjour Broderie Numérique ! \ud83d\udc4b\nJe veux commander le motif : *${m.nom}*${prixTxt}.\n\nQuelle marque de machine avez-vous ? (Brother, Janome, Tajima\u2026)\n\u2192 Pr\u00e9cisez-moi votre machine et je vous envoie le bon fichier + les d\u00e9tails de paiement.`;
-    const waLink = `https://wa.me/237693565223?text=${encodeURIComponent(msg)}`;
     const nCls = {'D\u00e9butant':'badge-debutant','Standard':'badge-standard','Avanc\u00e9':'badge-avance'}[m.niveau] || '';
+    const detailUrl = `motif.html?id=${m.id}`;
     return `
-      <div class="product-card" onclick="openModal(${m.id})" aria-label="${m.nom}">
+      <div class="product-card" onclick="window.location.href='${detailUrl}'" aria-label="${m.nom}">
         <div class="card-img">
           <img src="${m.image}" alt="${m.nom}" loading="lazy">
           ${m.vedette ? '<span class="badge-top">\u2605 TOP</span>' : ''}
@@ -430,9 +428,9 @@
           <div class="card-bottom">
             <div class="card-price">${m.prix ? `${m.prix.toLocaleString('fr')} <small>FCFA</small>` : ''}</div>
             <div class="card-btns">
-              <a href="${waLink}" target="_blank" rel="noopener noreferrer"
-                 onclick="event.stopPropagation()" class="btn-wa-card" aria-label="Commander ${m.nom}">
-                ${WA_SVG} Commander
+              <a href="${detailUrl}"
+                 onclick="event.stopPropagation()" class="btn-wa-card" style="background:#f59e0b; box-shadow:0 2px 8px rgba(245,158,11,0.25);" aria-label="Acheter ${m.nom}">
+                💳 Acheter
               </a>
             </div>
           </div>

@@ -340,14 +340,14 @@
   }
 
   function card(m) {
-    const link = waLink(m.nom, m.prix);
+    const detailUrl = `motif.html?id=${m.id}`;
     return `
-      <div class="card" onclick="openModal(${m.id})">
+      <div class="card" onclick="window.location.href='${detailUrl}'">
         <div class="card-img">
           <img src="${m.image}" alt="${m.nom}" loading="lazy">
           <div class="card-overlay">
-            <a href="${link}" target="_blank" rel="noopener" class="overlay-btn" onclick="event.stopPropagation()" aria-label="Commander ${m.nom}">
-              ${WA_SVG} Commander
+            <a href="${detailUrl}" class="overlay-btn" style="background:#f59e0b;" onclick="event.stopPropagation()" aria-label="Acheter ${m.nom}">
+               💳 Acheter
             </a>
           </div>
           ${m.vedette ? '<span class="badge-top">★ TOP</span>' : ''}
@@ -357,8 +357,8 @@
           <div class="card-name">${m.nom}</div>
           <div class="card-bottom">
             <div class="card-price">${m.prix ? `${m.prix.toLocaleString('fr')} <small>FCFA</small>` : ''}</div>
-            <a href="${link}" target="_blank" rel="noopener" class="card-action" onclick="event.stopPropagation()" aria-label="Commander">
-              ${WA_SVG} Commander
+            <a href="${detailUrl}" class="card-action" style="background:#f59e0b;" onclick="event.stopPropagation()" aria-label="Acheter">
+              💳 Acheter
             </a>
           </div>
         </div>
