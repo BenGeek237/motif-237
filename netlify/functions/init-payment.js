@@ -74,10 +74,16 @@ exports.handler = async (event, context) => {
     }
 
     const data = await response.json();
+    const payUrl = data.payment_url || data.url || (data.data && data.data.payment_url) || (data.data && data.data.url) || data.redirect_url;
+    
+    if (!payUrl) {
+       return { statusCode: 400, body: JSON.stringify({ error: "Structure inattendue : " + JSON.stringify(data) }) };
+    }
+
     return {
       statusCode: 200,
       body: JSON.stringify({
-        payment_url: data.payment_url || data.url, // Camerpay retourne souvent l'url dans `payment_url` ou `url`
+        payment_url: payUrl,
         reference: reference
       })
     };
