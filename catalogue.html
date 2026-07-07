@@ -414,7 +414,7 @@
 
   function renderCard(m) {
     const nCls = {'D\u00e9butant':'badge-debutant','Standard':'badge-standard','Avanc\u00e9':'badge-avance'}[m.niveau] || '';
-    const detailUrl = `motif.html?id=${m.id}`;
+    const detailUrl = `/motif.html?id=${m.id}`;
     return `
       <div class="product-card" onclick="window.location.href='${detailUrl}'" aria-label="${m.nom}">
         <div class="card-img">
