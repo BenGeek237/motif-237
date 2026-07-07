@@ -415,10 +415,11 @@
   function renderCard(m) {
     const nCls = {'D\u00e9butant':'badge-debutant','Standard':'badge-standard','Avanc\u00e9':'badge-avance'}[m.niveau] || '';
     const detailUrl = `/motif.html?id=${m.id}`;
+    const imgUrl = m.image.startsWith('http') || m.image.startsWith('/') ? m.image : '/' + m.image;
     return `
       <div class="product-card" onclick="window.location.href='${detailUrl}'" aria-label="${m.nom}">
         <div class="card-img">
-          <img src="${m.image}" alt="${m.nom}" loading="lazy">
+          <img src="${imgUrl}" alt="${m.nom}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           ${m.vedette ? '<span class="badge-top">\u2605 TOP</span>' : ''}
           ${m.niveau  ? `<span class="badge-niveau ${nCls}">${m.niveau}</span>` : ''}
         </div>

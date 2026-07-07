@@ -12,7 +12,7 @@ const CONFIG = {
   businessName: "Broderie Numérique",
   owner: "Mamoudou bia",
   location: "Yaoundé, Cameroun",
-  dataPath: "data/motifs.json",
+  dataPath: "/data/motifs.json",
   // Formats pris en charge (référence)
   formatsInfo: {
     DST: { machine: "Tajima", description: "Format universel le plus répandu" },
@@ -136,10 +136,11 @@ const UI = {
         (motif.formats.length > 3 ? `<span class="fmt-more">+${motif.formats.length - 3}</span>` : "")
       : "";
 
+    const imgUrl = motif.image.startsWith('http') || motif.image.startsWith('/') ? motif.image : '/' + motif.image;
     return `
-      <div class="product-card" onclick="window.location.href='motif.html?id=${motif.id}'" data-id="${motif.id}" aria-label="Fichier de broderie numérique ${motif.nom}">
+      <div class="product-card" onclick="window.location.href='/motif.html?id=${motif.id}'" data-id="${motif.id}" aria-label="Fichier de broderie numérique ${motif.nom}">
         <div class="card-img">
-          <img src="${motif.image}" alt="${motif.nom} — motif de broderie numérique ${motif.formats?.[0] || ''}" loading="lazy">
+          <img src="${imgUrl}" alt="${motif.nom} — motif de broderie numérique ${motif.formats?.[0] || ''}" loading="lazy">
           <!-- Catégorie -->
           <span class="badge-cat">${motif.categorie}</span>
           <!-- Vedette -->

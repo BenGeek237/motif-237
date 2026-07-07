@@ -281,7 +281,7 @@
     </div>
   </div>
 
-  <script src="js/app.js"></script>
+  <script src="/js/app.js"></script>
   <script>
     const { DataService, WhatsAppService } = window.BroderieNumerique;
     let curMotif = null, selFmt = '';
@@ -312,7 +312,8 @@
 
       // Image
       const img = document.getElementById('motif-image');
-      img.src = m.image; img.alt = `${m.nom} — fichier broderie numérique`;
+      img.src = m.image.startsWith('http') || m.image.startsWith('/') ? m.image : '/' + m.image; 
+      img.alt = `${m.nom} — fichier broderie numérique`;
 
       // Header
       document.getElementById('motif-cat-badge').textContent = m.categorie;
@@ -383,9 +384,10 @@
       document.getElementById('related-cat-label').textContent = `Autres designs ${m.categorie}`;
       document.getElementById('related-grid').innerHTML = others.map(o => {
         const fmts = (o.formats||[]).slice(0,3).map(f=>`<span class="fmt fmt-${f}">.${f}</span>`).join('');
-        return `<div class="rel-card" onclick="window.location.href='motif.html?id=${o.id}'" aria-label="${o.nom}">
+        const imgUrl = o.image.startsWith('http') || o.image.startsWith('/') ? o.image : '/' + o.image;
+        return `<div class="rel-card" onclick="window.location.href='/motif.html?id=${o.id}'" aria-label="${o.nom}">
           <div style="aspect-ratio:1;overflow:hidden;background:#f8f7f5;">
-            <img src="${o.image}" alt="${o.nom}" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <img src="${imgUrl}" alt="${o.nom}" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-3 border-t border-gray-100">
             <div class="font-bold text-sm text-gray-900 mb-1">${o.nom}</div>
