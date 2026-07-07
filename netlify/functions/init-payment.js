@@ -69,7 +69,7 @@ exports.handler = async (event, context) => {
     if (!response.ok) {
       const errorText = await response.text();
       console.error('Camerpay error:', errorText);
-      return { statusCode: response.status, body: JSON.stringify({ error: 'Erreur lors de l\'initialisation du paiement (Camerpay).' }) };
+      return { statusCode: response.status, body: JSON.stringify({ error: 'Erreur Camerpay: ' + errorText }) };
     }
 
     const data = await response.json();
