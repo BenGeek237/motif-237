@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== 'GET') {
@@ -9,6 +10,7 @@ exports.handler = async (event, context) => {
   const reference = event.queryStringParameters.ref;
   const motifId = event.queryStringParameters.motif;
   const format = event.queryStringParameters.fmt;
+  const cartString = event.queryStringParameters.cartString;
 
   if (!reference || !motifId || !format) {
     return { statusCode: 400, body: 'Paramètres manquants' };
@@ -21,6 +23,24 @@ exports.handler = async (event, context) => {
   if (!API_KEY) {
       console.error("CAMERPAY_API_KEY manquante");
       return { statusCode: 500, body: 'Configuration serveur incomplète.' };
+  }
+
+  // VERIFICATION HMAC DU PANIER (Sans base de données)
+  if (cartString) {
+      // Le nouveau système de panier passe la chaine du panier et on vérifie la signature
+      const expectedSignature = crypto.createHmac('sha256', API_KEY).update(cartString).digest('hex').substring(0, 16);
+      const refParts = reference.split('-');
+      const signatureFromRef = refParts[refParts.length - 1]; // ex: M237-timestamp-signature
+      
+      if (signatureFromRef !== expectedSignature) {
+          return { statusCode: 403, body: 'Signature du panier invalide. Accès refusé.' };
+      }
+
+      // Vérifier que le motif demandé est bien dans ce panier validé
+      const requestedItem = `${motifId}-${format}`;
+      if (!cartString.split('|').includes(requestedItem)) {
+          return { statusCode: 403, body: 'Ce motif ne fait pas partie de votre commande.' };
+      }
   }
 
   try {
@@ -40,7 +60,7 @@ exports.handler = async (event, context) => {
 
     const data = await response.json();
     
-    // Le statut attendu pour un paiement réussi est "SUCCESS" (à ajuster selon la documentation Camerpay)
+    // Le statut attendu pour un paiement réussi est "SUCCESS"
     if (data.status !== 'SUCCESS') {
       return { 
           statusCode: 403, 
@@ -49,7 +69,6 @@ exports.handler = async (event, context) => {
     }
 
     // 2. Localiser le fichier de broderie dans le dossier sécurisé
-    // On s'attend à ce que le fichier soit nommé "ID.FORMAT" (ex: "9.dst")
     const fileName = `${motifId}.${format.toLowerCase()}`;
     const filePath = path.join(__dirname, '..', '..', 'secure_files', fileName);
 

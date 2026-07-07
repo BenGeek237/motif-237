@@ -79,6 +79,47 @@ const DataService = {
 };
 
 // ================================
+// SERVICE PANIER (LOCAL STORAGE)
+// ================================
+const CartService = {
+  key: "bn_cart",
+  getCart() {
+    return JSON.parse(localStorage.getItem(this.key) || "[]");
+  },
+  addToCart(motif, format) {
+    const cart = this.getCart();
+    const existing = cart.find(i => i.id === motif.id && i.format === format);
+    if (!existing) {
+      cart.push({ id: motif.id, nom: motif.nom, prix: motif.prix, format: format, image: motif.image });
+      localStorage.setItem(this.key, JSON.stringify(cart));
+      this.updateCartCount();
+      UI.showToast(`Ajouté au panier : ${motif.nom} (${format})`);
+    } else {
+      UI.showToast(`Ce format de ${motif.nom} est déjà dans le panier`, "info");
+    }
+  },
+  removeFromCart(id, format) {
+    const cart = this.getCart().filter(i => !(i.id === id && i.format === format));
+    localStorage.setItem(this.key, JSON.stringify(cart));
+    this.updateCartCount();
+  },
+  clearCart() {
+    localStorage.removeItem(this.key);
+    this.updateCartCount();
+  },
+  getTotal() {
+    return this.getCart().reduce((sum, i) => sum + (i.prix || 0), 0);
+  },
+  updateCartCount() {
+    const count = this.getCart().length;
+    document.querySelectorAll('.cart-count-badge').forEach(el => {
+      el.textContent = count;
+      el.style.display = count > 0 ? 'flex' : 'none';
+    });
+  }
+};
+
+// ================================
 // SERVICE WHATSAPP — Broderie Numérique
 // ================================
 const WhatsAppService = {
@@ -104,6 +145,88 @@ const WhatsAppService = {
 // COMPOSANTS UI RÉUTILISABLES
 // ================================
 const UI = {
+  // Gestion du Panier (Drawer)
+  toggleCart() {
+    const drawer = document.getElementById('cart-drawer');
+    const overlay = document.getElementById('cart-overlay');
+    if (!drawer || !overlay) return;
+    const isOpen = !drawer.classList.contains('translate-x-full');
+    
+    if (isOpen) {
+      drawer.classList.add('translate-x-full');
+      overlay.classList.add('hidden');
+    } else {
+      this.renderCart();
+      drawer.classList.remove('translate-x-full');
+      overlay.classList.remove('hidden');
+    }
+  },
+
+  renderCart() {
+    const items = CartService.getCart();
+    const container = document.getElementById('cart-items');
+    const totalEl = document.getElementById('cart-total');
+    if (!container) return;
+
+    if (items.length === 0) {
+      container.innerHTML = `<div class="text-center text-gray-500 mt-10">Votre panier est vide.</div>`;
+      if(totalEl) totalEl.textContent = '0 FCFA';
+      return;
+    }
+
+    container.innerHTML = items.map(item => `
+      <div class="flex items-center gap-3 border-b pb-3">
+        <img src="${item.image.startsWith('http') || item.image.startsWith('/') ? item.image : '/' + item.image}" class="w-16 h-16 object-cover rounded-lg">
+        <div class="flex-1">
+          <h4 class="font-bold text-sm line-clamp-1">${item.nom}</h4>
+          <p class="text-xs text-gray-500">Format: ${item.format}</p>
+          <p class="text-sm font-semibold text-amber-600">${item.prix ? item.prix.toLocaleString() : 0} FCFA</p>
+        </div>
+        <button onclick="BroderieNumerique.CartService.removeFromCart(${item.id}, '${item.format}'); BroderieNumerique.UI.renderCart();" class="text-red-500 hover:text-red-700">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
+        </button>
+      </div>
+    `).join('');
+
+    if(totalEl) totalEl.textContent = `${CartService.getTotal().toLocaleString()} FCFA`;
+  },
+
+  async checkout() {
+    const items = CartService.getCart();
+    if (items.length === 0) return this.showToast("Votre panier est vide", "error");
+    
+    const phone = document.getElementById('cart-phone').value;
+    const email = document.getElementById('cart-email').value;
+    
+    if (!phone || phone.length < 9) {
+      return this.showToast("Numéro de téléphone invalide", "error");
+    }
+
+    const btn = document.getElementById('cart-checkout-btn');
+    btn.textContent = "Initialisation...";
+    btn.disabled = true;
+
+    try {
+      const response = await fetch('/.netlify/functions/init-payment', {
+        method: 'POST',
+        body: JSON.stringify({ cart: items, phone, email })
+      });
+      
+      const data = await response.json();
+      if (response.ok && data.payment_url) {
+        window.location.href = data.payment_url;
+      } else {
+        this.showToast("Erreur: " + (data.error || "Impossible d'initialiser"), "error");
+        btn.textContent = "Valider la commande";
+        btn.disabled = false;
+      }
+    } catch (e) {
+      this.showToast("Erreur réseau", "error");
+      btn.textContent = "Valider la commande";
+      btn.disabled = false;
+    }
+  },
+
   // Badge couleur selon le niveau
   niveauBadge(niveau) {
     const map = {
@@ -230,7 +353,8 @@ function initMobileMenu() {
 document.addEventListener("DOMContentLoaded", () => {
   setActiveNav();
   initMobileMenu();
+  CartService.updateCartCount();
 });
 
 // Export global
-window.BroderieNumerique = { CONFIG, DataService, WhatsAppService, UI };
+window.BroderieNumerique = { CONFIG, DataService, CartService, WhatsAppService, UI };
